@@ -66,11 +66,14 @@
 
 
         public function lesson_vowels(){
+          $this->load->view('templates/temp_alphabets');
 
           $this->load->view('lessons/lesson_vowels');
         }
 
         public function lesson_actionwords(){
+          $this->load->view('templates/temp_alphabets');
+          
           $this->load->view('lessons/lesson_actionwords');
         }
                   public function action_words(){

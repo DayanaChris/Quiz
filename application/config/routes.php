@@ -1,24 +1,24 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $route = array(
-	'default_controller' 	=> 'welcome',
-	'404_override' 			=> '',
+	'default_controller' 		=> 'welcome',
+	'404_override' 					=> '',
 	'translate_uri_dashes' 	=> FALSE,
-	'login' 			=> 'auth/login',
-	'user'				=> 'auth',
-	'landing_page'=> 'lessons/landing_page',
-	'about'=> 'lessons/about',
-	'contact'=> 'lessons/contact',
+	'login' 								=> 'auth/login',
+	'user'									=> 'auth',
+	'landing_page'					=> 'lessons/landing_page',
+	'about'									=> 'lessons/about',
+	'contact'								=> 'lessons/contact',
 
 
 
 
 
-	'add-category' 	=> 'category/create',
-	'add-question' 	=> 'quiz/create',
+	'add-category' 					=> 'category/create',
+	'add-question' 					=> 'quiz/create',
 	'edit-category/(:num)' 	=> 'category/edit/$1',
-	'edit-quiz/(:num)' 	 => 'quiz/edit/$1',
-	'category_menu' =>  'lessons/category_menu',
+	'edit-quiz/(:num)' 	 		=> 'quiz/edit/$1',
+	'category_menu' 				=>  'lessons/category_menu',
 
 
 

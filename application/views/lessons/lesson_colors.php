@@ -29,11 +29,13 @@
 
 
               .btn{
-                  width: 15%;
+                  width: 13%;
                   margin-top: 0px;
-                  padding:10px;
+                  padding:3%;
                   border: 0;
                   background: transparent;
+
+
               }
                body {
                    font-family: "Lato", sans-serif;

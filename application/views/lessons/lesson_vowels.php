@@ -54,7 +54,7 @@
 
             }
             .marg1{
-                margin-left: 17%;
+                margin-left: 2%;
                 margin-bottom: 2%;
             }
             .marg2{
@@ -65,6 +65,26 @@
                 margin-left: 28%;
             }
             .marg4{
+                margin-left: 3%;
+            }
+
+            .marg_vowel0{
+                margin-top:2%;
+                margin-left:25%;
+
+            }
+            .marg_vowel1{
+                margin-left: 2%;
+                margin-bottom: 2%;
+            }
+            .marg_vowel2{
+                margin-left: 25%;
+                margin-bottom: 2%;
+            }
+            .marg_vowel3{
+                margin-left: 28%;
+            }
+            .marg_vowel4{
                 margin-left: 3%;
             }
 
@@ -92,6 +112,16 @@
                     margin-left:8%;
                 }
 
+                /*  alphabets*/
+                .marg_vowel0{
+                    margin-left:20%;
+                    margin-top: 15%;
+
+                }
+
+                .marg_vowel1,.marg_vowel3,.marg_vowel4,.marg_vowel2{
+                    margin-left:8%;
+                }
                 .back{
                 margin-top: 0%;
                 width:50%;
@@ -122,6 +152,16 @@
                 .marg1,.marg3,.marg4,.marg2{
                     margin-left:8%;
                 }
+                .marg_vowel0{
+                    margin-top: 15%;
+
+                    margin-left:20%;
+
+                }
+                .marg_vowel1,.marg_vowel3,.marg_vowel4,.marg_vowel2{
+                    margin-left:8%;
+                }
+
 
                 .back{
                 margin-top: 0%;
@@ -139,41 +179,29 @@
  </head>
 
 
- <body class="run-animation">
+ <body class="run-animation vowel_bg">
 
 
 
 
 
 
-     <a href="<?php echo base_url(); ?>lessons/submenu_alphabets "> <img class="zoom  container float-left  card-img-top img-fluid    " style=" width: 15%;
-        margin-top: 0px;
-         padding:10px;
-        /* {{-- margin-bottom: 40px; --}} */
-        border: 0;
-        background: transparent; " src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/left.png"   /></a>
+   <a href="<?php echo base_url(); ?>lessons/submenu_alphabets "> <img class="btn zoom  container float-left  card-img-top img-fluid    "  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/left.png"   /></a>
 
-        <a href="<?php echo base_url(); ?>lessons/lesson_alphabets "> <img class="zoom  container float-right card-img-top img-fluid   " style=" width: 15%;
-            margin-top: 0px;
-         padding:10px;
-        /* {{-- margin-bottom: 40px; --}} */
-        border: 0;
-        background: transparent;
-             " src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_change.png"   /></a>
-
+           <a href="<?php echo base_url(); ?>lessons/lesson_alphabets  "> <img class="btn zoom  container float-right card-img-top img-fluid   "  src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_change.png"   /></a>
 
      <div class="container-fluid " >
 
 
 
-                <a href=""><img  class="   letter let center zoom card-img-top img-fluid marg0"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/a2.png"   ></a>
+                <a href=""><img  class="   vowel let center zoom card-img-top img-fluid marg_vowel0"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/a2.png"   ></a>
                <br>
-                <a href=""><img  class="   letter let center zoom card-img-top img-fluid marg1"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/e2.png"   ></a>
-                <a href=""><img  class="   letter let center zoom card-img-top img-fluid marg2" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/i2.png"   ></a>
+                <a href=""><img  class="   vowel let center zoom card-img-top img-fluid marg_vowel1"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/e2.png"   ></a>
+                <a href=""><img  class="   vowel let center zoom card-img-top img-fluid marg_vowel2" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/i2.png"   ></a>
                    <br>
 
-                <a href=""><img  class="   letter  let center zoom card-img-top img-fluid marg3"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/o2.png"   >
-                <a href=""><img  class="   letter  let center zoom card-img-top img-fluid marg4"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/u2.png"   >
+                <a href=""><img  class="   vowel  let center zoom card-img-top img-fluid marg_vowel3"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/o2.png"   >
+                <a href=""><img  class="   vowel  let center zoom card-img-top img-fluid marg_vowel4"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/u2.png"   >
 
                 </div>
 

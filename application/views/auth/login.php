@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <html lang="en">
     <!--<![endif]-->
     <!-- BEGIN HEAD -->
-
+ 
     <head>
         <meta charset="utf-8" />
         <title>Metronic Admin Theme #1 | User Login 2</title>
@@ -55,7 +55,12 @@ License: You must have a valid license purchased only from themeforest(the above
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css">
 
 
+        <style>
+        .login{   background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/login.png"); }
 
+
+
+        </style>
 
 
        </head>

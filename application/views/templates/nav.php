@@ -31,7 +31,7 @@
                       <!-- if not logged in this will show the login/register -->
                       <?php if (!$this->ion_auth->logged_in()) : ?>
 
-                      <li class="nav-item" ><a class="nav-link " href="<?php echo base_url(); ?>Auth/login">Login</a></li>
+                      <li class="nav-item" ><a class="nav-link " href="<?php echo base_url(); ?>Auth/login" style="font-size: 20px;">Login</a></li>
                     <?php endif; ?>
                     <!--if logged in, this menus nav bar will show  -->
                     <?php if ($this->ion_auth->logged_in()) : ?>
@@ -42,7 +42,7 @@
                         <a  id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="font-size: 20px;">USER</a>
 
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="font-size: 18px;">
                           <li><a href="<?php echo base_url(); ?>category_menu"  class="dropdown-item">START THE LESSON</a></li>
 
                           <li><a href="<?php echo base_url(); ?>Auth/logout"  class="dropdown-item">Logout</a></li>

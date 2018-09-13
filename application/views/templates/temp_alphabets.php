@@ -39,9 +39,10 @@
             }
 
                    .btn{
-                      width: 15%;
+                      width: 10%;
                       margin-top: 0px;
                       padding:10px;
+                      padding-right: 2%;
                       border: 0;
                       background: transparent;
                   }
@@ -101,7 +102,33 @@
                   .colors_bg{background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/background.jpg"); }
                   .actionwords_bg{background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Action Words/background.jpg"); }
 
+
                   .expression_happy{width: 40%;  }
+                  .vowel_bg{background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/background.jpg"); }
+
+
+                  .marg_vowel0{
+                      margin-top:2%;
+                      margin-left:29%;
+
+                  }
+                  .marg_vowel1{
+                      margin-left: 17%;
+                      margin-bottom: 2%;
+                  }
+                  .marg_vowel2{
+                      margin-left: 25%;
+                      margin-bottom: 2%;
+                  }
+                  .marg_vowel3{
+                      margin-left: 28%;
+                  }
+                  .marg_vowel4{
+                      margin-left: 3%;
+                  }
+
+
+                  .vowel{ width:20%; padding-right: 0%;  }
 
                    /* end new */
 
@@ -142,9 +169,9 @@
                   border: 0;
                   background: transparent;
                   }
-                  .marg0{ margin-top:2%; margin-left:12%; }
-                  .marg1{ margin-left: 20%; }
-                  .margine2{ margin-left: 15%; }
+                  .marg0{ margin-top:2%; margin-left:18%; }
+                  .marg1{ margin-left: 22%; }
+                  .margine2{ margin-left: 17%; }
                   .marg3{  margin-left: 9%; }
                   .marg4{ margin-left: 0.5%; }
 
@@ -160,7 +187,9 @@
                       .letter,.lettersmall{  width: 30%; }
                       .margine2{  margin-left:0%;  }
                       .marg0,.marg1,.marg3,.marg4{ margin-left:0%;  }
-
+                      .vowel{
+                          width: 40%;
+                      }
                       .back{
                       margin-top: 0%;
                       width:50%;
@@ -175,9 +204,35 @@
                       .number{width: 27%; }
                       .number1margin{margin-left: 0%}
                       .number2margin{margin-left: 0%}
+                      /*  alphabets*/
+                      .marg_vowel0{
+                          margin-left:20%;
+                          margin-top: 15%;
+
+                      }
+
+                      .marg_vowel1,.marg_vowel3,.marg_vowel4,.marg_vowel2{
+                          margin-left:8%;
+                      }
 
 
                   }
+
+                  @media screen and (max-width: 767px) {
+
+                     .marg_vowel0{
+                         margin-top: 15%;
+
+                         margin-left:20%;
+
+                     }
+                     .marg_vowel1,.marg_vowel3,.marg_vowel4,.marg_vowel2{
+                         margin-left:8%;
+                     }
+                     .vowel{
+                         width: 40%;
+                     }
+                 }
 
                    @media screen and (min-height: 1200px) {
                       .btn{

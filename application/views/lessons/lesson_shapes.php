@@ -26,12 +26,14 @@
 
       <style>
 
-     .btn{
-                  width: 15%;
-                  margin-top: 0px;
-                  padding:10px;
-                  border: 0;
-                  background: transparent;
+      .btn{
+          width: 13%;
+          margin-top: 0px;
+          padding:3%;
+          border: 0;
+          background: transparent;
+
+
               }
                body {
                    font-family: "Lato", sans-serif;
