@@ -1,5 +1,5 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SPEDEMY.com</title>
+    <title>SPEDEMY</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/app.css">
@@ -54,6 +54,9 @@
                        height: 100vh;
                        margin: 0;
                    }
+                   .extra {
+                      color: inherit;
+                  }
 
                    /* newly added */
                    .Alphabet_bg{ background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/background.jpg"); }
@@ -105,6 +108,7 @@
 
                   .expression_happy{width: 40%;  }
                   .vowel_bg{background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/background.jpg"); }
+                  .shape_bg{background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Shapes/Shape/background.jpg");}
 
 
                   .marg_vowel0{
@@ -143,7 +147,9 @@
 
                       .color{ width: 13%;  }
                       .number{width: 12%; }
-                      .number1margin{margin-left: 25%}
+                      .number0margin{margin-left: 10%}
+
+                      .number1margin{margin-left: 31%}
                       .number2margin{margin-left: 45%}
 
 
@@ -154,6 +160,8 @@
                       .shape2margin{margin-left: 10%}
 
                       .letterA{width: 30%;  }
+                      .shapesLesson{width: 20%;  }
+
 
 
 
@@ -181,6 +189,18 @@
                       -webkit-transform: scale(1.3); /* Safari 3-8 */
                       transform: scale(1.3);
                   }
+
+
+
+
+
+
+
+                  .bottom-left {
+                      position: absolute;
+                      top: 90%;
+                      left: 40%;
+                  }
                    @media screen and (max-width: 576px) {
 
                       .btn{ width: 20%; }
@@ -201,6 +221,16 @@
                       }
 
                       .color2margin{  margin-left:50%; }
+                      .color{width: 27%; }
+                      .color1margin{margin-left: 2%; }
+                      .color2margin{margin-left: 20%; }
+                      .color3margin{margin-left: 5%; }
+
+                      .color4margin{margin-left: 5%; }
+
+
+
+
                       .number{width: 27%; }
                       .number1margin{margin-left: 0%}
                       .number2margin{margin-left: 0%}
@@ -214,6 +244,7 @@
                       .marg_vowel1,.marg_vowel3,.marg_vowel4,.marg_vowel2{
                           margin-left:8%;
                       }
+                        /* .expression_2{ margin-left:80%; } */
 
 
                   }
@@ -232,6 +263,7 @@
                      .vowel{
                          width: 40%;
                      }
+
                  }
 
                    @media screen and (min-height: 1200px) {
@@ -265,6 +297,8 @@
                           margin-left:20%;
                       }
                       .number{width: 27%; }
+                      .color{width: 27%; }
+
                       .number1margin{margin-left: 0%}
                       .number2margin{margin-left: 0%}
                   }

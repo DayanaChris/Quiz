@@ -4,36 +4,34 @@
      <a href="<?php echo base_url(); ?>lessons/submenu_numbers "> <img class=" btn zoom  container float-left  card-img-top img-fluid    " style=" " src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/left.png"   /></a>
 
           <div class="container-fluid " >
-                  <a href="#myModal" role="button"  data-toggle="modal">     <img  class="    number   center zoom card-img-top img-fluid color1margin" style="margin-top:2%"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/0.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid"  style="margin-top:2%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/1.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid"   style="margin-top:2%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/2.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid"   style="margin-top:2%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/3.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">     <img  class="   number   center zoom card-img-top img-fluid number1margin"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/4.png"   >
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/5.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/6.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/7.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid number2margin"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/8.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/9.png"   ></a>
-                  <a href="#myModal" role="button"  data-toggle="modal">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/10.png"   ></a>
+                  <div class="d-inline  " data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="0">    <img  class="    number   center zoom card-img-top img-fluid number0margin" style="margin-top:2%"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/0.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="1">    <img  class="   number   center zoom card-img-top img-fluid"  style="margin-top:2%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/1.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="2">    <img  class="   number   center zoom card-img-top img-fluid"   style="margin-top:2%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/2.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="3">    <img  class="   number   center zoom card-img-top img-fluid"   style="margin-top:2%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/3.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="4">     <img  class="   number   center zoom card-img-top img-fluid number1margin"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/4.png"   >  </a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="5">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/5.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="6">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/6.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="7">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/7.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="8">    <img  class="   number   center zoom card-img-top img-fluid number2margin"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/8.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="9">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/9.png"   ></a></div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="10">    <img  class="   number   center zoom card-img-top img-fluid"    src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/10.png"   ></a></div>
           </div>
 
 
           <div class="container-fluid">
           <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" >
               <div class="modal-dialog modal-full" role="document" >
-                  <div class="modal-content number_bg" >
-                      <div class="modal-header">
+                  <div class="modal-content " style=" background: transparent;" >
+                    <div class="modal-header" style="margin-top: 20px" >
                         <!-- mag animate -->
-                        <!-- <button type="button" class="close" data-dismiss="modal" style="visibility: hidden;">&times;</button> -->
-                        <button type="button" class="close" data-dismiss="modal"  >
-                          <a href="<?php echo base_url(); ?>lessons/lesson_expressions "> <img class="zoom  container float-right card-img-top img-fluid   " style=" width: 10%;
-                              margin-top: 0px;
+                          <a href="<?php echo base_url(); ?>lessons/lesson_numbers " class="fixed-top" style="margin-right: 10px;"> <img class="zoom  container float-right card-img-top img-fluid   " style=" width: 90px;
+
+                              margin-right: 0px;
                               border: 0;
-                              padding-right: 0;
                               background: transparent; " src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/close_button.png"   /></a>
-                        </button>
+
                       </div>
-                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <div id="carousel-example-generic" class="carousel slide number_bg" data-interval="false" >
                           <!-- <div class="carousel-inner"> -->
                             <div class="carousel-inner  " role="listbox">
 

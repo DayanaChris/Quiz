@@ -2,7 +2,7 @@
 
 
 
-  <a href="<?php echo base_url(); ?>category_menu "> <img class="zoom  container float-left card-img-top img-fluid   " style=" width: 15%;
+  <a href="<?php echo base_url(); ?>category_menu " > <img class="zoom  container float-left card-img-top img-fluid   " style=" width: 15%;
       padding: 10px;
       margin-top: 0px;
       margin-bottom: 20px;

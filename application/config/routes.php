@@ -9,6 +9,8 @@ $route = array(
 	'landing_page'					=> 'lessons/landing_page',
 	'about'									=> 'lessons/about',
 	'contact'								=> 'lessons/contact',
+	'level'								=> 'pages/level',
+
 
 
 
@@ -69,3 +71,7 @@ $route['lessons/lesson_expressions'] = 'lessons/lesson_expressions';
 
 
 $route['lessons/lesson_vowels'] = 'lessons/lesson_vowels';
+
+
+
+$route['level'] = 'pages/level';

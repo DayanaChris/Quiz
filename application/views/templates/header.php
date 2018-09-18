@@ -21,7 +21,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <head>
         <meta charset="utf-8" />
-        <title>Metronic Admin Theme #1 | User Login 2</title>
+        <title>SPEDEMY</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Preview page of Metronic Admin Theme #1 for " name="description" />
@@ -65,7 +65,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
               .about_bg{   background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/Contactpage/backg1png.png"); }
-
+              .category_menu_bg{background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/blue.png"); }
 
                body {
                    /* background-image: url("https://images.pexels.com/photos/35807/rose-red-rose-romantic-rose-bloom.jpg?auto=compress&cs=tinysrgb&h=350"); */
@@ -88,7 +88,7 @@ License: You must have a valid license purchased only from themeforest(the above
                   margin: 20px auto;
                   margin-bottom: 100px;
                   padding: 20px 0px;
-                  padding-bottom: 60px;
+                  /* padding-bottom: 60px; */
                   padding-left: 5px;
 
               }

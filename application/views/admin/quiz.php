@@ -17,6 +17,7 @@
       <th>Question</th>
       <th>Category</th>
       <th>Level</th>
+      <th>Alloted Time</th>
 
       <th>Option</th>
     </tr>
@@ -28,6 +29,8 @@
       <td><?php echo $info->question?></td>
       <td><?php echo $info->category_name?></td>
       <td><?php echo $info->level_name?></td>
+      <td><?php echo $info->time?></td>
+
 
       <td>
       <!-- <a href=""><span class="fa fa-edit"></span></a> | -->

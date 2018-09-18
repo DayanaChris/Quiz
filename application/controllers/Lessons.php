@@ -12,8 +12,21 @@
       $this->load->view('lessons/submenu_actionwords');
     }
     public function category_menu(){
-      $this->load->view('category_menu');
+
+      if (!$this->ion_auth->logged_in())
+  		{
+  			// redirect them to the login page
+        redirect('auth/login', 'refresh');
+  		}
+      else {
+        $this->load->view('category_menu');
+      }
     }
+
+
+
+
+
 
     public function landing_page(){
       $this->load->view('pages/landing_page');
@@ -73,7 +86,7 @@
 
         public function lesson_actionwords(){
           $this->load->view('templates/temp_alphabets');
-          
+
           $this->load->view('lessons/lesson_actionwords');
         }
                   public function action_words(){
@@ -110,9 +123,7 @@
               }
 
         public function lesson_expressions(){
-          $this->load->view('templates/temp_alphabets');
-
-
+          $this->load->view('templates/temp_alphabets'); 
           $this->load->view('lessons/lesson_expressions');
         }
               public function expression_happy(){ $this->load->view('templates/temp_alphabets'); $this->load->view('lessons/expression_happy'); }

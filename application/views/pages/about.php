@@ -1,4 +1,3 @@
-
 <?php
   $this->load->view('templates/header');
   $this->load->view('templates/nav');  ?>
@@ -18,11 +17,11 @@
 
       </div>
 
-                            <div class="card" style="padding: 40px">
-                                    <div class="container content center  " style="max-width:1000px"  >  <h3  >
-                                                    <p class="text-justify" style=" color:#5A2971;"> <b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </b></p></h3>
-                                    </div>
-                            </div>
+        <div class="card" style="padding: 40px">
+            <div class="container content center  " style="max-width:1000px"  >  <h3  >
+                  <p class="text-justify" style=" color:#5A2971;"> <b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </b></p></h3>
+            </div>
+        </div>
 
 
   </div>
@@ -39,7 +38,7 @@
                                       <div class="col-xs-6 col-md-4 box">
                                         <div class="card" style="background:blueviolet; padding:10%">
                                           <div class="wrapper">
-                                            <img class="card-img-top img-fluid" style=" border-radius: 50%;"  src="SPEDEMY/About/jp.jpg" alt="Card image cap">
+                                            <img class="card-img-top img-fluid" style=" border-radius: 50%;"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/About/jp.jpg" alt="Card image cap">
                                           </div>
                                           <h4 class="card-title" style="text-align: center;color: white;">John Paul Espejo</h4>
                                           <div class="card-body">
@@ -52,7 +51,7 @@
                                       <div class="col-xs-6 col-md-4 box">
                                                     <div class="card" style="background:#D00076; padding:10%">
                                                       <div class="wrapper">
-                                                        <img class="card-img-top img-fluid" style=" border-radius: 50%;" src="SPEDEMY/About/chris.jpg" alt="Card image cap">
+                                                        <img class="card-img-top img-fluid" style=" border-radius: 50%;" src="<?php echo site_url(); ?>assets/images/SPEDEMY/About/chris.jpg" alt="Card image cap">
                                                       </div>
                                                       <h4 class="card-title" style="text-align: center;">Chris Dianne R. Calamba</h4>
                                                       <div class="card-body">
@@ -64,7 +63,7 @@
                                       <div class="col-xs-6 col-md-4 box">
                                                     <div class="card" style="background:#65ABFF; padding:10%">
                                                       <div class="wrapper">
-                                                        <img class="card-img-top img-fluid" style=" border-radius: 50%;" src="SPEDEMY/About/bea.jpg" alt="Card image cap">
+                                                        <img class="card-img-top img-fluid" style=" border-radius: 50%;" src="<?php echo site_url(); ?>assets/images/SPEDEMY/About/bea.jpg" alt="Card image cap">
                                                       </div>
                                                       <h4 class="card-title" style="text-align: center;">Beatrice Anne Tuco</h4>
                                                       <div class="card-body">

@@ -5,11 +5,6 @@
 
   <body>
 
-
-
-
-
-
 <div class="container-fluid" style="background-color: #00aeef ;padding-top: 70px;">
   <div class="row">
           <div class="col-md-6  " style="margin-top:0%;  "> <img   class=" mx-auto d-block letterA" src="<?php echo site_url(); ?>assets/images/SPEDEMY/welcome_logo.png" width="100%"    alt="welcome"  > </div>

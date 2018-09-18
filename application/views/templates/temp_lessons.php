@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SPEDEMY.com</title>
+    <title>SPEDEMY</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/app.css">
