@@ -24,7 +24,9 @@ class Welcome extends CI_Controller {
 		if ($this->ion_auth->is_admin() ){
 			$this->load->view('admin/index');
 		}else if (!$this->ion_auth->is_admin() ){
-			$this->load->view('pages/landing_page');
+			$user = $this->ion_auth->user()->row();
+			$data = array('user' => $user);
+			$this->load->view('pages/landing_page', $data);
 			// $this->load->view('pages/landing_page');
 
 		}

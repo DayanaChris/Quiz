@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Category extends CI_Controller {
+class Level extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
@@ -37,9 +37,9 @@ class Category extends CI_Controller {
 
 
 			$data = array(
-				'category' => $this->db->order_by('id', 'asc')->get_where('category')
+				'level' => $this->db->order_by('id', 'asc')->get_where('level')
 			);
-			$this->load->view('admin/category',$data);
+			$this->load->view('admin/level',$data);
 
 
 		}
@@ -54,16 +54,16 @@ class Category extends CI_Controller {
 		$data = array(
 			'is_edit' => false
 		);
-		$this->load->view('admin/category-create',$data);
+		$this->load->view('admin/level-create',$data);
 	}
 
 
 	public function edit($id){
 		$data = array(
 			'is_edit' => true,
-			'category_details' => $this->db->get_where('category', array('id' => $id)),
+			'level_details' => $this->db->get_where('level', array('id' => $id)),
 		);
-		$this->load->view('admin/category-create',$data);
+		$this->load->view('admin/level-create',$data);
 	}
 
 
@@ -71,24 +71,24 @@ class Category extends CI_Controller {
 	public function post()
 	{
 
-		if(isset($_POST['categoryadd'])){
+		if(isset($_POST['leveladd'])){
 			$attr = array(
-				'category_name' => $_POST['categoryadd'],
+				'level_name' => $_POST['leveladd'],
 				'created_by' => $this->user_id
 			);
-			$this->db->insert('category',$attr);
-			redirect('category');
+			$this->db->insert('level',$attr);
+			redirect('level');
 		}
-		if(isset($_POST['categoryedit'])){
+		if(isset($_POST['leveledit'])){
 			//print_r($_POST);
 			$attr = array(
-				'category_name' => $_POST['categoryedit']
+				'level_name' => $_POST['leveledit']
 			);
-			$this->db->update('category', $attr, array('id' => $_POST['catid']));
-			redirect('category');
+			$this->db->update('levellevel', $attr, array('id' => $_POST['levid']));
+			redirect('level');
 		}
-		if(isset($_POST['delete_category'])){
-			$this->db->delete('category', array('id' => $_POST['delete_category']));
+		if(isset($_POST['delete_level'])){
+			$this->db->delete('level', array('id' => $_POST['delete_level']));
 		}
 
 	}

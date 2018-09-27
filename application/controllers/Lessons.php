@@ -11,6 +11,8 @@
       $this->load->view('templates/temp_lessons');
       $this->load->view('lessons/submenu_actionwords');
     }
+
+
     public function category_menu(){
 
       if (!$this->ion_auth->logged_in())
@@ -19,11 +21,37 @@
         redirect('auth/login', 'refresh');
   		}
       else {
-        $this->load->view('category_menu');
+        $data = array(
+          'cat' => $this->db->get_where('category')
+        );
+        $this->load->view('category_menu', $data);
       }
     }
 
 
+
+    public function category($id){
+      $data = array(
+        'id' => $id
+      );
+      $this->load->view('templates/temp_lessons');
+      $this->load->view('lessons/submenu_numbers', $data );
+    }
+
+
+
+    public function videos_menu(){
+      $this->load->view('videos/videos_menu' );
+    }
+    public function lessons_video(){
+      $this->load->view('videos/lessons_video' );
+    }
+    public function storyseries(){
+      $this->load->view('videos/storyseries' );
+    }
+    public function singalong(){
+      $this->load->view('videos/singalong' );
+    }
 
 
 
@@ -57,10 +85,7 @@
       $this->load->view('lessons/submenu_expressions');
     }
 
-    public function submenu_numbers(){
-      $this->load->view('templates/temp_lessons');
-      $this->load->view('lessons/submenu_numbers');
-    }
+
 
 
     public function submenu_shapes(){
@@ -123,7 +148,7 @@
               }
 
         public function lesson_expressions(){
-          $this->load->view('templates/temp_alphabets'); 
+          $this->load->view('templates/temp_alphabets');
           $this->load->view('lessons/lesson_expressions');
         }
               public function expression_happy(){ $this->load->view('templates/temp_alphabets'); $this->load->view('lessons/expression_happy'); }
@@ -168,6 +193,38 @@
     public function quiz_shapes(){
       $this->load->view('lessons/quiz_shapes');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // CRUD
+
+    public function create()
+  	{
+  		$data = array(
+  			'category' => $this->db->order_by('id', 'asc')->get_where('category'),
+  			'level' => $this->db->order_by('id', 'asc')->get_where('level')
+
+
+  		);
+  		$this->load->view('admin/lesson-create',$data);
+  	}
 
 
   }

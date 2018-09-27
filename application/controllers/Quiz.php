@@ -16,6 +16,8 @@ class Quiz extends CI_Controller {
 		$this->group_id = $group[0]->id;
 	}
 
+
+
 	public function index()
 	{
 
@@ -42,12 +44,15 @@ class Quiz extends CI_Controller {
 
 
 		}
+	}
 
-
-
-
-
-
+	public function question($category_id, $level_id)
+	{
+		$data = array(
+			'question' => $this->query->questioner($level_id,$category_id),
+		);
+		$this->load->view('templates/temp_lessons');
+		$this->load->view('question',$data);
 	}
 
 	public function create()
@@ -62,6 +67,13 @@ class Quiz extends CI_Controller {
 	}
 	public function post()
 	{
+		if(isset($_POST['check_question'])){
+			if($_POST['check_question'] == 0){
+					echo 'error';
+			}else{
+					$this->load->view('answer');
+			}
+		}
 		if(isset($_POST['question'])){
 			$attr = array(
 				'question' => $_POST['question'],
@@ -74,14 +86,30 @@ class Quiz extends CI_Controller {
 			);
 			$this->db->insert('quiz', $attr);
 			$lastid = $this->db->insert_id();
+
+			$count = 0;
+			$answr = $_POST['answer'][0];
 			foreach($_POST['imgid'] as $img){
+				if($count == $answr){
+					$ans = 1;
+				}else{
+					$ans = 0;
+				}
+
+			// INSERT TO QUIZ_IMAGE TABLE
+				//if($count == )
 				$attr = array(
 					'quiz_id' => $lastid,
 					'img_id' => $img,
+					'is_correct' =>$ans
 				);
-				$this->db->insert('quiz_image', $attr);
+
+				$count++;
+			$this->db->insert('quiz_image', $attr);
 			}
-			$attr = array(
+
+
+		 $attr = array(
 				'quiz_id' => $lastid,
 				'answer' => $_POST['answer'][0],
 			);
@@ -124,7 +152,10 @@ class Quiz extends CI_Controller {
 		$location = 'files';
 		if($extension == 'jpeg' || $extension == 'jpg' || $extension == 'png' || $extension == 'gif'){
 			$location = 'images';
-		}
+		}else if($extension == 'mp4'){
+					$location = 'videos';
+				}
+
 
 		$targetDir = 'assets/uploads';
 		$cleanupTargetDir = true; // Remove old files
@@ -163,6 +194,15 @@ class Quiz extends CI_Controller {
 				'original_name' => $original_filename,
 			);
 			$this->db->insert('images',$attribute);
+
+
+// video attributes
+			$attributes = array(
+				'user_id' => $this->user_id,
+				'vid_name' => $fileName,
+				'original_name' => $original_filename,
+			);
+			$this->db->insert('videos',$attributes);
 			sleep(1);
 
 			closedir($dir);
@@ -204,4 +244,35 @@ class Quiz extends CI_Controller {
 		}
 		die(json_encode($attay));
 	}
+
+
+	public function videoupld()
+    {
+       $this->load->helper('string');
+       $config['upload_path'] = 'assets/uploads_videos'; # check path is correct
+       $config['max_size'] = '1000000000000000';  #102400000
+       $config['allowed_types'] = 'mp4'; # add video extenstion on here
+       $config['overwrite'] = FALSE;
+       $config['remove_spaces'] = TRUE;
+       $video_name =$_FILES['video_image']['name'];
+       $config['file_name'] = $video_name;
+       $this->load->library('upload', $config);
+       $this->upload->initialize($config);
+       if ( ! $this->upload->do_upload('video_image'))
+       {
+            echo 'fail';
+            return;
+            //redirect('Admin/video_upload');
+        }
+        else
+        {
+            $data = array('upload_data' => $this->upload->data());
+            $this->load->view('upload_success', $data);
+            $url = 'assets/uploads_videos'.$video_name;
+            $this->Admin_model->videoupld($url);
+            redirect('admin/upload');
+        }
+    }
+
+
 }
