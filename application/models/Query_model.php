@@ -13,6 +13,14 @@ class Query_model extends CI_Model
 		$this->db->delete('quiz_image', array('quiz_id' => $id));
 	}
 
+	public function delete_lesson($id){
+		$this->db->delete('lesson', array('id' => $id));
+		$this->db->delete('lesson_image', array('lesson_id' => $id));
+		$this->db->delete('lesson_example', array('lesson_id' => $id));
+		$this->db->delete('lesson_manager', array('lesson_image_id' => $id),array('lesson_example_id' => $id) );
+
+	}
+
 	public function quiz_cat(){
 		$query = $this->db->select('*, quiz.id as quizID')
 				->from('quiz')
@@ -21,6 +29,9 @@ class Query_model extends CI_Model
 				->get();
 		return $query;
 	}
+
+
+
 
 	public function questioner($id, $catId){
 		$qury = $this->db->select('*, quiz.id as quizID')
@@ -45,16 +56,5 @@ class Query_model extends CI_Model
 
 
 
-	// public function videoupld($url)
-  //   {
-  //     $title = $this->input->post('video_image');
-  //     //$details = $this->input->post('details');
-  //     //$type = $this->input->post('gallery');
-  //     $data = array(
-  //       'title'  => $title,
-  //       'url' => $url,
-  //       //'category'  => $type`
-  //     );
-  //     $this->db->insert('videoss', $data);
-  //   }
+ 
 }
