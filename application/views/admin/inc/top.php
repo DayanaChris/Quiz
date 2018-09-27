@@ -207,11 +207,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </a>
                             </li>
                             <li class="nav-item start ">
-                                <a href="<?php echo base_url()?>category" class="nav-link nav-toggle">
-                                    <i class="icon-home"></i>
-                                    <span class="title">Category Manager</span>
+                              <a href="<?php echo base_url()?>category" class="nav-link nav-toggle">
+                                <i class="icon-home"></i>
+                                <span class="title">Category Manager</span>
+                              </a>
+                            </li>
+                            <li class="nav-item start ">
+                              <a href="<?php echo base_url()?>level" class="nav-link nav-toggle">
+                                <i class="icon-home"></i>
+                                <span class="title">Level Manager</span>
+                              </a>
+                            </li>
+                            <br><br>
+                            <li class="nav-item start ">
+                                <a href="<?php echo base_url()?>add-lesson" class="nav-link nav-toggle">
+                                    <i class="icon-user"></i>
+                                    <span class="title">Lesson Manager</span>
                                 </a>
                             </li>
+
 
                             <li class="nav-item start ">
                                 <a href="<?php echo base_url()?>quiz" class="nav-link nav-toggle">
@@ -219,7 +233,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <span class="title">Quiz Manager</span>
                                 </a>
                             </li>
-<br><br><br><br>
+                            <br><br><br><br>
                             <li class="nav-item start ">
                                 <a href="<?php echo base_url()?>category_menu" class="nav-link nav-toggle">
                                     <i class="icon-home"></i>
