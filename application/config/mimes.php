@@ -135,7 +135,9 @@ return array(
 	'cer'   =>	array('application/pkix-cert', 'application/x-x509-ca-cert'),
 	'3g2'   =>	'video/3gpp2',
 	'3gp'   =>	array('video/3gp', 'video/3gpp'),
-	'mp4'   =>	'video/mp4',
+
+	'mp4'   =>  'video/mp4',
+	// 'mp4' 	=> 	array('video/mp4', 'application/octet-stream'),
 	'm4a'   =>	'audio/x-m4a',
 	'f4v'   =>	array('video/mp4', 'video/x-f4v'),
 	'flv'	=>	'video/x-flv',
@@ -181,4 +183,11 @@ return array(
 	'odm'	=>	'application/vnd.oasis.opendocument.text-master',
 	'ott'	=>	'application/vnd.oasis.opendocument.text-template',
 	'oth'	=>	'application/vnd.oasis.opendocument.text-web'
+
+
+
+	// 'wmv'   =>     array('video/wmv', 'video/x-ms-wmv',
+	// 'flv-application/octet-stream', 'application/octet-stream'),
+	// 'flv'   =>     array('video/flv', 'video/x-flv',
+	// 'flv-application/octet-stream', 'application/octet-stream'),
 );

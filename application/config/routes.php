@@ -9,19 +9,34 @@ $route = array(
 	'landing_page'					=> 'lessons/landing_page',
 	'about'									=> 'lessons/about',
 	'contact'								=> 'lessons/contact',
-	'level'								=> 'pages/level',
-
-
-
-
+	'levels/(:num)'					=> 'pages/levels/$1',
+	'sing-a-long'						=> 'pages/sing_vid_menu',
 
 
 	'add-category' 					=> 'category/create',
+	'add-level' 						=> 'level/create',
+
 	'add-question' 					=> 'quiz/create',
+	'add-lesson' 						=> 'lessons/create',
+
+
+
 	'edit-category/(:num)' 	=> 'category/edit/$1',
+	'edit-level/(:num)' 		=> 'level/edit/$1',
+
+
 	'edit-quiz/(:num)' 	 		=> 'quiz/edit/$1',
 	'category_menu' 				=>  'lessons/category_menu',
+	'videos_menu' 					=>  'lessons/videos_menu',
+	'videos/Lesson' 				=>  'lessons/lessons_video',
+	'videos/StorySeries' 		=>  'lessons/storyseries',
+	'videos/SingALong' 			=>  'lessons/singalong',
 
+
+
+	'question/(:num)/(:any)'				=> 'quiz/question/$1/$2',
+
+	'upload' 					=> 'upload/index',
 
 
 	//'add-user/(:num)'	=> 'auth/create_user/$1',
@@ -31,6 +46,7 @@ $route = array(
 
 
 
+// $route['videos/lessons_video'] = 'lessons/lessons_video';
 
 $route['lessons/submenu_alphabets'] = 'lessons/submenu_alphabets';
 $route['lessons/submenu_numbers'] = 'lessons/submenu_numbers';
@@ -71,7 +87,3 @@ $route['lessons/lesson_expressions'] = 'lessons/lesson_expressions';
 
 
 $route['lessons/lesson_vowels'] = 'lessons/lesson_vowels';
-
-
-
-$route['level'] = 'pages/level';
