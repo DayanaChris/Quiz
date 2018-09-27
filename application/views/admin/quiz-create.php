@@ -11,14 +11,13 @@
     <div class="portlet-body form">
 
             <div class="form-body">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <div class="form-group form-md-line-input">
                     <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>">
                     <label for="form_control_1">Question</label>
                     <span class="help-block">Some help goes here...</span>
                 </div>
              </div>
-
 
              <!-- category dropdown -->
              <div class="col-md-4">
@@ -28,7 +27,7 @@
           						if($category->num_rows() > 0){
           							foreach($category->result() as $cat){
           						?>
-                                  	<option value="<?php echo $cat->id?>"><?php echo $cat->category_name?></option>
+                      <option value="<?php echo $cat->id?>"><?php echo $cat->category_name?></option>
                                   <?php
           							}
           						}
@@ -38,10 +37,33 @@
                     <span class="help-block">Some help goes here...</span>
                 </div>
              </div>
+
+
+
+                 <!-- Text input-->
+
+            <div class="form-group">
+             <div class="col-md-6">
+               <label for="form_control_1">Question Title Image</label>
+               <?php
+               $count = 0;
+               ?>
+                 <input type="text" class="form-control input-inline input-medium img<?php echo $count?> " name="question_image" />
+                 <input type="text" class="imgId<?php echo $count?>" name="question_image" />
+
+                 <span class="help-inline">
+                   <a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.
+                   </a>
+                 </span>
+                 <span class="help-block">Some help goes here...</span>
+                 <?php
+               $count++;
+               ?>
+             </div>
+           </div>
+
+qa!W
              <!-- end category dropdown -->
-
-
-
              <!--LEVEL dropdown  -->
               <div class="col-md-4">
                  <div class="form-group form-md-line-input">
@@ -61,12 +83,6 @@
                  </div>
               </div>
               <!--END LEVEL dropdown  -->
-
-
-
-
-
-
              <div class="col-md-4">
                  <div class="form-group form-md-line-input">
                     <select name="timepic" class="form-control">
@@ -98,16 +114,7 @@
             <i class="icon-settings font-red-sunglo"></i>
             <span class="caption-subject bold uppercase"> Answer</span>
         </div>
-         <div class="actions">
-            <?php /*?>
-			//remove sa kay makakutaw nga part :D
-			<div class="btn-group">
-                <a class="btn btn-sm green" href="javascript:;" id="add-more"> Add more answer
-                    <i class="fa fa-plus"></i>
-                </a>
-            </div>
-			<?php */?>
-        </div>
+
     </div>
     <div class="portlet-body form">
         <div class="col-xs-12">
@@ -117,30 +124,30 @@
                     <div id="field0" class="form-body">
                         <!-- Text input-->
                         <?php
-						$count = 0;
-						for ($char = 'A'; $char <= 'C'; $char++) {
+              						$count = 0;
+              						for ($char = 'A'; $char <= 'D'; $char++) {
 
-						?>
-                        <div class="form-group">
-                            <div class="mt-radio-list col-md-1">
-                                <label class="mt-radio"> <?php echo $char?>
-                                    <input <?php if($char == 'A'){?>checked<?php }?> type="radio" value="<?php echo $count?>" name="answer[]" />
-                                    <span></span>
-                                </label>
-                            </div>
-                            <div class="col-md-9">
-                                <input type="text" class="form-control input-inline input-medium img<?php echo $count?>" name="img[]">
+              						?>
+                                      <div class="form-group">
+                                          <div class="mt-radio-list col-md-1">
+                                              <label class="mt-radio"> <?php echo $char?>
+                                                  <input <?php if($char == 'A'){?>checked<?php }?> type="radio" value="<?php echo $count?>" name="answer[]" />
+                                                  <span></span>
+                                              </label>
+                                          </div>
+                                          <div class="col-md-9">
+                                              <input type="text" class="form-control input-inline input-medium img<?php echo $count?>" name="img[]">
 
-                                <input type="text" class="imgId<?php echo $count?>" name="imgid[]" />
+                                              <input type="text" class="imgId<?php echo $count?>" name="imgid[]" />
 
 
-                                <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
-                            </div>
-                        </div>
-                        <?php
-						$count++;
-							}
-						?>
+                                              <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
+                                          </div>
+                                      </div>
+                                      <?php
+              						$count++;
+              							}
+              						?>
                     </div>
                 </div>
                 <div style="clear:both"></div>

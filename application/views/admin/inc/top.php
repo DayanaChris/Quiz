@@ -7,7 +7,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
     <!--<![endif]-->
     <!-- BEGIN HEAD -->
-
+    <!-- MODERNAPP.CO CHATBOT SCRIPT -->
+    <script type="text/javascript" src="https://embed.modernapp.co/chat?code=3e79f97a386fb57c27bd29b039985a48"></script>
     <head>
         <meta charset="utf-8" />
         <title>SPEDEMY.com</title>

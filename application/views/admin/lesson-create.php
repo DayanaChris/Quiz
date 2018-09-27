@@ -1,5 +1,5 @@
 <?php $this->load->view('admin/inc/top');?>
- <form role="form" method="post" action="<?php echo base_url()?>quiz/post">
+ <form role="form" method="post" action="<?php echo base_url()?>quiz">
 <div class="portlet light bordered">
     <div class="portlet-title">
         <div class="caption font-red-sunglo">
@@ -39,34 +39,31 @@
              </div>
              <!-- end category dropdown -->
 
+             <div class="form-group">
 
-                 <!-- <div class="form-group form-md-line-input">
-                     <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>">
-                     <label for="form_control_1">Question</label>
-                     <span class="help-block">Some help goes here...</span>
-                 </div> -->
-
-
-                 <!-- <div class="col-md-8">
-                     <div class="form-group form-md-line-input">
-                         <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>">
-
-                         <label for="form_control_1">Category Title Name</label> <br>
-                         <span class="help-block">Some help goes here...</span>
-                     </div>
-                  </div> -->
                   <div class="col-md-9">
                     <label for="form_control_1">Category Title Image</label>
-                      <input type="text" class="form-control input-inline input-medium img " name="img[]">
-                      <!-- <input type="text" class="imgId<?php echo $count?>" name="imgid[]" /> -->
-                      <span class="help-inline"><a class="select_img" id=""  data-toggle="modal" href="#static">Upload or select image.</a></span>
+                    <?php
+                    $count = 0;
+                    ?>
+                      <input type="text" class="form-control input-inline input-medium img<?php echo $count?> " name="cat_title_image" />
+                      <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
                       <!-- <span class="help-block">Some help goes here...</span> -->
+                      <?php
+                    $count++;
+                    ?>
                   </div>
+                </div>
+
+
+
+
+
 
 
 
             <div style="clear:both"></div>
-		</div>
+		        </div>
        </div>
 </div>
 
@@ -77,18 +74,23 @@
             <span class="caption-subject bold uppercase">Add Lesson Image</span>
 
             <div class="col-md-9">
+              <label for="form_control_1"></label>
+              <?php
+              $counts = 1;
+              ?>
+                <input type="text" class="form-control input-inline input-medium img<?php echo $counts?>" name="img[]">
+                <input type="text" class="imgId<?php echo $counts?>" name="imgid[]" />
 
-              <!-- <label for="form_control_1">Category Title Image</label> -->
-                <input type="text" class="form-control input-inline input-medium img " name="img[]">
-                <!-- <input type="text" class="imgId<?php echo $count?>" name="imgid[]" /> -->
-                <span class="help-inline"><a class="select_img" id=""  data-toggle="modal" href="#static">Upload or select image.</a></span>
-                <!-- <span class="help-block">Some help goes here...</span> -->
+                <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
+                <?php
+              $counts++;
+              ?>
             </div>
 
         </div>
         <div class="col-md-4">
             <div class="form-group form-md-line-input">
-                <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>">
+                <input type="text" class="form-control" id="form_control_1" name="lesson_name" value="<?php //echo $value?>">
 
                 <label for="form_control_1">Lesson  Name</label> <br>
                 <span class="help-block">Some help goes here...</span>
@@ -96,6 +98,7 @@
          </div>
 
     </div>
+
     <div class="portlet-body form" style="margin-left: 50px">
         <div class="col-xs-12">
             <div class="col-md-12 caption font-red-sunglo" >
@@ -123,24 +126,19 @@
 
             						?>
                         <div class="form-group">
-                            <!-- <div class="mt-radio-list col-md-1">
-                                <label class="mt-radio"> <?php echo $char?>
-                                    <input <?php if($char == 'A'){?>checked<?php }?> type="radio" value="<?php echo $count?>" name="answer[]" />
-                                    <span></span>
-                                </label>
-                            </div> -->
+
                             <div class="col-md-4">
                                 <div class="form-group form-md-line-input">
-                                    <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>">
+                                    <input type="text" class="form-control" id="form_control_1" name="lesson_example_name" value="<?php //echo $value?>">
 
                                     <label for="form_control_1">Example Name</label> <br>
                                     <span class="help-block">Some help goes here...</span>
                                 </div>
                              </div>
                             <div class="col-md-4">
-                                <input type="text" class="form-control input-inline input-medium img<?php echo $count?>" name="img[]">
+                                <input type="text" class="form-control input-inline input-medium img<?php echo $count?>" name="imgEx[]">
 
-                                <input type="hidden" class="imgId<?php echo $count?>" name="imgid[]" />
+                                <input type="hidden" class="imgId<?php echo $count?>" name="imgidEx[]" />
 
 
                                 <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
@@ -162,98 +160,9 @@
           <div style="clear:both"></div>
 	</div>
 </div>
-<div class="portlet light bordered">
-    <div class="portlet-title">
-        <div class="caption font-red-sunglo">
-            <i class="icon-settings font-red-sunglo"></i>
-            <span class="caption-subject bold uppercase">Add Lesson Image</span>
-
-            <div class="col-md-9">
-
-              <!-- <label for="form_control_1">Category Title Image</label> -->
-                <input type="text" class="form-control input-inline input-medium img " name="img[]">
-                <!-- <input type="text" class="imgId<?php echo $count?>" name="imgid[]" /> -->
-                <span class="help-inline"><a class="select_img" id=""  data-toggle="modal" href="#static">Upload or select image.</a></span>
-                <!-- <span class="help-block">Some help goes here...</span> -->
-            </div>
-
-        </div>
-        <div class="col-md-4">
-            <div class="form-group form-md-line-input">
-                <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>">
-
-                <label for="form_control_1">Lesson  Name</label> <br>
-                <span class="help-block">Some help goes here...</span>
-            </div>
-         </div>
-
-    </div>
-    <div class="portlet-body form" style="margin-left: 50px">
-        <div class="col-xs-12">
-            <div class="col-md-12 caption font-red-sunglo" >
-              <i class="icon-settings font-red-sunglo"></i>
-              <span class="caption-subject bold uppercase">Add Lesson Example</span>
-              <!-- <label for="form_control_1">Add Lessons Example</label> -->
-              <div class="actions">
-                 <?php ?>
-              <!-- //remove sa kay makakutaw nga part :D -->
-              <div class="btn-group">
-                     <a class="btn btn-sm green" href="javascript:;" id="add-more"> Add more example
-                         <i class="fa fa-plus"></i>
-                     </a>
-                 </div>
-              <?php ?>
-              </div>
 
 
-                <div  class="form-horizontal" id="field">
-                    <div id="field0" class="form-body">
-                        <!-- Text input-->
-                        <?php
-            						$count = 0;
-            						for ($char = 'A'; $char <= 'C'; $char++) {
 
-            						?>
-                        <div class="form-group">
-                            <!-- <div class="mt-radio-list col-md-1">
-                                <label class="mt-radio"> <?php echo $char?>
-                                    <input <?php if($char == 'A'){?>checked<?php }?> type="radio" value="<?php echo $count?>" name="answer[]" />
-                                    <span></span>
-                                </label>
-                            </div> -->
-                            <div class="col-md-4">
-                                <div class="form-group form-md-line-input">
-                                    <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>">
-
-                                    <label for="form_control_1">Example Name</label> <br>
-                                    <span class="help-block">Some help goes here...</span>
-                                </div>
-                             </div>
-                            <div class="col-md-4">
-                                <input type="text" class="form-control input-inline input-medium img<?php echo $count?>" name="img[]">
-
-                                <input type="hidden" class="imgId<?php echo $count?>" name="imgid[]" />
-
-
-                                <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
-
-                            </div>
-
-                        </div>
-                        <?php
-          						$count++;
-          							}
-          						?>
-                    </div>
-                </div>
-                <div style="clear:both"></div>
-                <!-- Button -->
-
-            </div>
-        </div>
-          <div style="clear:both"></div>
-	</div>
-</div>
 <div class="form-actions noborder">
     <button type="submit" class="btn blue">Submit</button>
     <a href="<?php echo base_url()?>quiz" class="btn default">Cancel</a>

@@ -26,7 +26,7 @@
       <td><?php echo $cat->id?></td>
       <td><?php echo $cat->category_name?></td>
       <td><?php echo $cat->category_image?>
-        <img src="<?php echo base_url().'assets/uploads/category_image/'.$cat->category_image ?>" class="img-responsive" style="width:100px;">
+        <img src="<?php echo base_url().'assets/uploads/'.$cat->category_image ?>" class="img-responsive" style="width:100px;">
 
       </td>
 

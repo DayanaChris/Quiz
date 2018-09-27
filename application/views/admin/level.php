@@ -1,12 +1,12 @@
 <?php $this->load->view('admin/inc/top');?>
 
-<div class="col-md-6">
+<!-- <div class="col-md-6">
         <div class="btn-group">
             <a href="<?php echo base_url()?>add-level" class="btn sbold green"> Add New Level
                 <i class="fa fa-plus"></i>
             </a>
         </div>
-    </div>
+    </div> -->
     <div style="clear:both"></div>
     <div style="height:40px; visibility:hidden"></div>
 <?php if($level->num_rows() > 0){ ?>
@@ -39,8 +39,5 @@
 <?php }else{
 echo 'No Level found...';
 }?>
-
-
-<!-- asdasdasd -->
 
 <?php $this->load->view('admin/inc/footer');?>
