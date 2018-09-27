@@ -15,6 +15,8 @@
     <tr>
       <th></th>
       <th>Category Name</th>
+      <th>Category Image</th>
+
       <th>Option</th>
     </tr>
   </thead>
@@ -23,6 +25,11 @@
     <tr class="odd gradeX delete-<?php echo $cat->id?>">
       <td><?php echo $cat->id?></td>
       <td><?php echo $cat->category_name?></td>
+      <td><?php echo $cat->category_image?>
+        <img src="<?php echo base_url().'assets/uploads/category_image/'.$cat->category_image ?>" class="img-responsive" style="width:100px;">
+
+      </td>
+
       <td>
       <a href="<?php echo base_url()?>edit-category/<?php echo $cat->id?>"><span class="fa fa-edit"></span></a> |
       <a href="javascript:;" class="delete_category" id="<?php echo $cat->id?>"><span class="fa fa-trash"></span></a></td>

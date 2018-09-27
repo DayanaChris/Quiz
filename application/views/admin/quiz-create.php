@@ -124,13 +124,16 @@
                         <div class="form-group">
                             <div class="mt-radio-list col-md-1">
                                 <label class="mt-radio"> <?php echo $char?>
-                                    <input <?php if($char == 'A'){?>checked<?php }?> type="radio" value="<?php echo strtolower($char)?>" name="answer[]" />
+                                    <input <?php if($char == 'A'){?>checked<?php }?> type="radio" value="<?php echo $count?>" name="answer[]" />
                                     <span></span>
                                 </label>
                             </div>
                             <div class="col-md-9">
                                 <input type="text" class="form-control input-inline input-medium img<?php echo $count?>" name="img[]">
-                                <input type="hidden" class="imgId<?php echo $count?>" name="imgid[]" />
+
+                                <input type="text" class="imgId<?php echo $count?>" name="imgid[]" />
+
+
                                 <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
                             </div>
                         </div>
