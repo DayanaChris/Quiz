@@ -20,7 +20,11 @@
   </div>
 
 
-
+  <pre>
+  <?php
+  print_r($user)
+  ?>
+  </pre>
 </div>
 
 <div class="container-fluid" style="background-color: #DDFAFE ;padding-bottom: 5px;" >

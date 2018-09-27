@@ -1,7 +1,14 @@
 
  <body class="run-animation number_bg">
+   <?php
+   if($cat->num_rows() > 0){
+     foreach ($cat->result() as $key => $value) {
 
-     <a href="<?php echo base_url(); ?>lessons/submenu_numbers "> <img class=" btn zoom  container float-left  card-img-top img-fluid    " style=" " src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/left.png"   /></a>
+   ?>
+   <?php
+      $cat = $this->ion_auth->user()->row();
+   ?>
+     <a href="<?php echo base_url(); ?>category_menu "> <img class=" btn zoom  container float-left  card-img-top img-fluid    " style=" " src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/left.png"   /></a>
 
           <div class="container-fluid " >
                   <div class="d-inline  " data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="0">    <img  class="    number   center zoom card-img-top img-fluid number0margin" style="margin-top:2%"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Number/0.png"   ></a></div>
@@ -38,17 +45,13 @@
 
                               <div class="item active " >
                                 <div>
-
                                       <div class="row">
                                               <div class="col-sm-6  " style="margin-top:0%"> <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Numbers/__Lesson/0.png"  alt="Letter A"  > </div>
                                              <div class="col-sm-6   " style="margin-top:0%" >   <img class=" mx-auto d-block" style="width:100%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Numbers/__Lesson/word_zero.png"  alt="Letter A" > </div>
                                       </div>
-
-
                                 </div>
                                 <br><br> <br>
                               </div>
-
 
 
                               <div class="item "  >
@@ -509,20 +512,6 @@
                                </div>
                                <br><br> <br>
                              </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

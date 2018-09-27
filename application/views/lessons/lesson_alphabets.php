@@ -6,32 +6,32 @@
 
        <div class="container-fluid " >
 
-                 <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="0">  <img  class=" letter let center zoom card-img-top img-fluid marg0"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/A.png"   ></a> </div>
-                <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="2">     <img  class="   letter let center zoom card-img-top img-fluid" style="margin-top:2%"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/B.png"   ></a> </div>
-                <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="4">    <img  class="   letter let center zoom card-img-top img-fluid"  style="margin-top:2%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/C.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="6">            <img  class="   letter let center zoom card-img-top img-fluid marg1"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/D.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="8">             <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/E.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="10">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/F.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="12">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/G.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="14">            <img  class="   letter let center zoom card-img-top img-fluid margine2"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/H.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="16">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/I.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="18">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/J.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="20">           <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/K.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="22">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/L.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="24">            <img  class="   letter let center zoom card-img-top img-fluid marg3"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/M.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="26">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/N.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="28">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/O.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="30">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/P.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="32">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/Q.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="34">            <img  class="   letter let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/R.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="36">            <img  class="   lettersmall let center zoom card-img-top img-fluid marg4"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/S.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="38">            <img  class="   lettersmall let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/T.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="40">            <img  class="   lettersmall let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/U.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="42">            <img  class="   lettersmall let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/V.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="44">            <img  class="   lettersmall let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/W.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="46">            <img  class="   lettersmall let center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/X.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="48">            <img  class="   lettersmall let center zoom card-img-top img-fluid"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/Y.png"   ></a> </div>
-                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="50">            <img  class="   lettersmall let center zoom card-img-top img-fluid" style="padding-right:0%;"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/Z.png"   ></a> </div>
+                 <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="0">  <img  class=" letter   center zoom card-img-top img-fluid marg0"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/A.png"   ></a> </div>
+                <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="2">     <img  class="   letter   center zoom card-img-top img-fluid" style="margin-top:2%"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/B.png"   ></a> </div>
+                <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="4">    <img  class="   letter   center zoom card-img-top img-fluid"  style="margin-top:2%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/C.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="6">            <img  class="   letter   center zoom card-img-top img-fluid marg1"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/D.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="8">             <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/E.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="10">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/F.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="12">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/G.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="14">            <img  class="   letter   center zoom card-img-top img-fluid marg2"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/H.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="16">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/I.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="18">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/J.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="20">           <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/K.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="22">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/L.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="24">            <img  class="   letter   center zoom card-img-top img-fluid marg3"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/M.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="26">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/N.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="28">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/O.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="30">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/P.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="32">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/Q.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="34">            <img  class="   letter   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/R.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="36">            <img  class="   lettersmall   center zoom card-img-top img-fluid marg4"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/S.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="38">            <img  class="   lettersmall   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/T.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="40">            <img  class="   lettersmall   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/U.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="42">            <img  class="   lettersmall   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/V.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="44">            <img  class="   lettersmall   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/W.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="46">            <img  class="   lettersmall   center zoom card-img-top img-fluid"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/X.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="48">            <img  class="   lettersmall   center zoom card-img-top img-fluid"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/Y.png"   ></a> </div>
+                  <div class="d-inline" data-toggle="modal" data-target="#myModal"> <a href="#carousel-example-generic" data-slide-to="50">            <img  class="   lettersmall   center zoom card-img-top img-fluid" style="padding-right:0%;"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/Alphabets/Z.png"   ></a> </div>
       </div>
 
 
@@ -65,19 +65,28 @@
                                       <img   class=" mx-auto d-block letterA" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/_letters/Aa.png"  alt="Letter A"  >
                                     </div>
                                     <div class="row">
-                                            <div class="col-sm-6  " style="margin-top:0%"> <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/apple.png"  alt="Letter A"  >
-                                              <h1 class="bottom-left">APPLE</h1> </div>
-                                           <div class="col-sm-6   " style="margin-top:0%" >   <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/ant.png"  alt="Letter A" > </div>
-                                    </div>
-
-                                    <!-- <div class="row">
                                             <div class="col-sm-6  " style="margin-top:0%">
-                                             <h1 class="centered">APPLE</h1>
-                                           </div>
+                                              <ul class="list-group"  >
+                                                <li class="list-group-item let" >
+                                                  <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/apple.png"  alt="Letter A"  >
+                                                </li>
+                                                <li class="list-group-item let  "  >
+                                                  <h1 class="centered_text">APPLE</h1>
+                                                </li>
+                                              </ul>
+                                            </div>
                                            <div class="col-sm-6   " style="margin-top:0%" >
-                                             <h1 class="centered">ANT</h1>
-                                           </div>
-                                    </div> -->
+                                             <ul class="list-group"  >
+                                               <li class="list-group-item let  "  >
+                                                 <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/ant.png"  alt="Letter A" >
+                                               </li>
+                                               <li class="list-group-item let  "  >
+                                                 <h1 class="centered_text">ANT</h1>
+
+                                               </li>
+                                             </ul>
+                                          </div>
+                                    </div>
                               </div>
                               <br><br> <br>
                           </div>
@@ -90,17 +99,27 @@
                                     <img   class=" mx-auto d-block letterA" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/_letters/Aa.png"  alt="Letter A"  >
                                   </div>
                                   <div class="row">
-                                          <div class="col-sm-6  " style="margin-top:0%"> <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/alligator.png"  alt="Letter A"  > </div>
-                                         <div class="col-sm-6   " style="margin-top:0%" >   <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/anchor.png"  alt="Letter A" > </div>
-                                  </div>
-
-                                  <div class="row">
                                           <div class="col-sm-6  " style="margin-top:0%">
-                                           <h1 class="centered">ALLIGATOR</h1>
-                                         </div>
+                                            <ul class="list-group"  >
+                                              <li class="list-group-item let" >
+                                                <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/alligator.png"  alt="Letter A"  >
+                                              </li>
+                                              <li class="list-group-item let  "  >
+                                                <h1 class="centered_text">ALLIGATOR</h1>
+                                              </li>
+                                            </ul>
+                                          </div>
                                          <div class="col-sm-6   " style="margin-top:0%" >
-                                           <h1 class="centered">ANCHOR</h1>
-                                         </div>
+                                           <ul class="list-group"  >
+                                             <li class="list-group-item let  "  >
+                                               <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/A/anchor.png"  alt="Letter A" >
+                                             </li>
+                                             <li class="list-group-item let  "  >
+                                               <h1 class="centered_text">ANCHOR</h1>
+
+                                             </li>
+                                           </ul>
+                                        </div>
                                   </div>
                             </div>
                             <br><br> <br>
@@ -115,18 +134,33 @@
                                     <img   class=" mx-auto d-block letterA" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/_letters/Bb.png"  alt="Letter A"  >
                                   </div>
                                   <div class="row">
-                                          <div class="col-sm-6  " style="margin-top:0%"> <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/B/baseball_bat.png"  alt="Letter A"  > </div>
-                                         <div class="col-sm-6   " style="margin-top:0%" >   <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/B/bee.png"  alt="Letter A" > </div>
+                                    <div class="col-sm-6  " style="margin-top:0%">
+                                      <ul class="list-group"  >
+                                        <li class="list-group-item let" >
+                                          <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/B/baseball_bat.png"  alt="Letter A"  >
+                                        </li>
+                                        <li class="list-group-item let  "  >
+                                          <h1 class="centered_text">BASEBALL BAT</h1>
+
+                                        </li>
+                                      </ul>
+                                    </div>
+                                   <div class="col-sm-6   " style="margin-top:0%" >
+                                     <ul class="list-group"  >
+                                       <li class="list-group-item let  "  >
+                                          <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/B/bee.png"  alt="Letter A" >
+                                       </li>
+                                       <li class="list-group-item let  "  >
+                                         <h1 class="centered_text">BEE</h1>
+
+
+                                       </li>
+                                     </ul>
                                   </div>
 
-                                  <div class="row">
-                                          <div class="col-sm-6  " style="margin-top:0%">
-                                           <h1 class="centered">BASEBALL BAT</h1>
-                                         </div>
-                                         <div class="col-sm-6   " style="margin-top:0%" >
-                                           <h1 class="centered">BEE</h1>
-                                         </div>
                                   </div>
+
+
                             </div>
                             <br><br> <br>
                           </div>
@@ -139,18 +173,33 @@
                                     <img   class=" mx-auto d-block letterA" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/_letters/Bb.png"  alt="Letter A"  >
                                   </div>
                                   <div class="row">
-                                          <div class="col-sm-6  " style="margin-top:0%"> <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/B/bell.png"  alt="Letter A"  > </div>
-                                         <div class="col-sm-6   " style="margin-top:0%" >   <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/B/bird.png"  alt="Letter A" > </div>
+                                    <div class="col-sm-6  " style="margin-top:0%">
+                                      <ul class="list-group"  >
+                                        <li class="list-group-item let" >
+                                           <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/B/bell.png"  alt="Letter A"  >
+                                        </li>
+                                        <li class="list-group-item let  "  >
+                                          <h1 class="centered_text">BALLONS</h1>
+
+                                        </li>
+                                      </ul>
+                                    </div>
+                                   <div class="col-sm-6   " style="margin-top:0%" >
+                                     <ul class="list-group"  >
+                                       <li class="list-group-item let  "  >
+                                         <img class=" mx-auto d-block" style="width:60%" src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lesson/Alphabets/_Lessons/B/bird.png"  alt="Letter A" >
+                                       </li>
+                                       <li class="list-group-item let  "  >
+                                         <h1 class="centered_text">BANANA</h1>
+
+
+                                       </li>
+                                     </ul>
                                   </div>
 
-                                  <div class="row">
-                                          <div class="col-sm-6  " style="margin-top:0%">
-                                           <h1 class="centered">BALLONS</h1>
-                                         </div>
-                                         <div class="col-sm-6   " style="margin-top:0%" >
-                                           <h1 class="centered">BANANA</h1>
-                                         </div>
                                   </div>
+
+                           
                             </div>
                             <br><br> <br>
                           </div>

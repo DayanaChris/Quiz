@@ -25,8 +25,8 @@
 
 
 
-                  <!-- Right Side Of Navbar -->
-                  <ul class="navbar-nav ml-auto">
+
+                  <ul class="nav navbar-nav navbar-right">
                       <!-- Authentication Links -->
                       <!-- if not logged in this will show the login/register -->
                       <?php if (!$this->ion_auth->logged_in()) : ?>
@@ -38,8 +38,12 @@
 
                       <ul class="nav-item dropdown">
 
-
-                        <a  id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="font-size: 20px;">USER</a>
+                        <!-- GET CURRENT USER NAME -->
+                        <?php
+	                         $user = $this->ion_auth->user()->row();
+                        ?>
+                        <a  id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="font-size: 20px;">
+                          <?php echo ucwords($user->first_name.' '.$user->last_name)?></a>
 
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="font-size: 18px;">

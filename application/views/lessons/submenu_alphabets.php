@@ -1,3 +1,5 @@
+
+
 <body class="learn_alphabets run-animation">
 
 
@@ -14,7 +16,7 @@
                              <img  class="container logoanimation  pad log"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/logo_alphabets.png"   >
                              <div class="row ">
                                     <div class="col-sm-6   "  ><a href="<?php echo base_url(); ?>lessons/lesson_alphabets  "> <img class="card-img-top img-fluid zoom btn center"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_lesson.png" alt="Card image cap"></a> </div>
-                                    <div class="col-sm-6  " ><a href="quiz_alphabetsA "><img class="card-img-top img-fluid zoom btn center"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_quiz.png" alt="Card image cap"></a> </div>
+                                    <div class="col-sm-6  " ><a href="<?php echo base_url(); ?>levels  "><img class="card-img-top img-fluid zoom btn center"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_quiz.png" alt="Card image cap"></a> </div>
                             </div>
                         </div>
                 </div>

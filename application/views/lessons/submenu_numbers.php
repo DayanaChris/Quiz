@@ -6,16 +6,18 @@
             padding: 10px;
             margin-top: 0px;
             margin-bottom: 20px;
-            border: 0;  S
+            border: 0;
             background: transparent; " src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/Menu_button.png"   /></a>
 
                 <div  id="logo" class=" container " style=" margin-top: 0%;margin-bottom: 0%; " >
                         <div class="container">
                             <br>
-                             <img  class="container logoanimation  pad log"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/logo_numbers.png"   >
+                             <img  class="container logoanimation  pad log"  src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/logo_<?php echo $id?>.png"   >
                              <div class="row ">
-                                    <div class="col-sm-6   "  ><a href="<?php echo base_url(); ?>lessons/lesson_numbers  "> <img class="card-img-top img-fluid zoom btn center"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_lesson.png" alt="Card image cap"></a> </div>
-                                    <div class="col-sm-6  " ><a href="quiz_alphabetsA "><img class="card-img-top img-fluid zoom btn center"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_quiz.png" alt="Card image cap"></a> </div>
+                               <!-- <div class="col-sm-6   "  ><a href="<?php echo base_url(); ?>lessons/lesson_numbers"> <img class="card-img-top img-fluid zoom btn center"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_lesson.png" alt="Card image cap"></a> </div> -->
+
+                                    <div class="col-sm-6   "  ><a href="<?php echo base_url(); ?>lessons/lesson_numbers/<?php echo $id?> "> <img class="card-img-top img-fluid zoom btn center"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_lesson.png" alt="Card image cap"></a> </div>
+                                    <div class="col-sm-6  " ><a href="<?php echo base_url(); ?>levels/<?php echo $id?> "><img class="card-img-top img-fluid zoom btn center"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/sub_menu/btn_quiz.png" alt="Card image cap"></a> </div>
                             </div>
                         </div>
                 </div>

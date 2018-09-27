@@ -1,30 +1,60 @@
 <!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.7
+Version: 4.7.5
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
 
-    <!-- CSRF Token -->
-      <meta name="csrf-token" content="{{ csrf_token() }}">
+    <head>
+        <meta charset="utf-8" />
+        <title>SPEDEMY</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Preview page of Metronic Admin Theme #1 for " name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('/assets/global/plugins/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url()?>assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url()?>assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url()?>assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="<?php echo base_url()?>assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url()?>assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="<?php echo base_url()?>assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="<?php echo base_url()?>assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN PAGE LEVEL STYLES -->
+        <link href="<?php echo base_url()?>assets/pages/css/login-2.min.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" />
 
-    <title>SPEDEMY</title>
-    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/app.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css">
 
+        <!-- <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/app.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css">
 
-    <script src="http://cdn.ckeditor.com/4.5.11/standard/ckeditor.js"></script>
-    <!-- Fonts -->
-      <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-
-
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        
 
       <style>
 
@@ -57,16 +87,6 @@
                    .extra {
                       color: inherit;
                   }
-                  h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-                   font-size: 40px;
-                   font-style: normal;
-                   font-variant: normal;
-                   font-weight: 1000;
-                   line-height: 53.9px; }
-
-                   .let{
-                     background:#00000000; border-color: #00000000;
-                   }
 
                   .about_bg{   background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/Contactpage/backg1png.png"); }
                   .category_menu_bg{background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/blue.png"); }
@@ -127,6 +147,7 @@
                   .marg_vowel0{
                       margin-top:2%;
                       margin-left:29%;
+
                   }
                   .marg_vowel1{
                       margin-left: 17%;
@@ -151,7 +172,7 @@
 
 
 
-                .letter{ width:13%; padding-right: 0%;  }
+                   .letter{ width:13%; padding-right: 0%;  }
 
 
 
@@ -190,9 +211,8 @@
                   background: transparent;
                   }
                   .marg0{ margin-top:2%; margin-left:18%; }
-                  .marg1{ margin-left: 20%; }
-
-                  .marg2{ margin-left: 15%; }
+                  .marg1{ margin-left: 22%; }
+                  .margine2{ margin-left: 17%; }
                   .marg3{  margin-left: 9%; }
                   .marg4{ margin-left: 0.5%; }
 
@@ -215,14 +235,10 @@
                       left: 40%;
                   }
                    @media screen and (max-width: 576px) {
-                     h1 {
-                      font-size: 30px;
-                    }
-
 
                       .btn{ width: 20%; }
                       .letter,.lettersmall{  width: 30%; }
-                      .marg2{  margin-left:0%;  }
+                      .margine2{  margin-left:0%;  }
                       .marg0,.marg1,.marg3,.marg4{ margin-left:0%;  }
                       .vowel{
                           width: 40%;
@@ -277,10 +293,6 @@
                      .marg_vowel1,.marg_vowel3,.marg_vowel4,.marg_vowel2{
                          margin-left:8%;
                      }
-                     .marg1{
-                       /* margin-left:14%; */
-
-                     }
                      .vowel{
                          width: 40%;
                      }
@@ -294,7 +306,7 @@
                       .letter,.lettersmall{
                           width: 30%;
                       }
-                      .marg2{
+                      .margine2{
                           margin-left:0%;
                       }
                       .marg0,.marg1,.marg3,.marg4{

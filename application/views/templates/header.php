@@ -63,7 +63,6 @@ License: You must have a valid license purchased only from themeforest(the above
    <style>
 
 
-
               .about_bg{   background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/Contactpage/backg1png.png"); }
               .category_menu_bg{background-image: url("<?php echo site_url(); ?>assets/images/SPEDEMY/blue.png"); }
 
@@ -78,9 +77,23 @@ License: You must have a valid license purchased only from themeforest(the above
                    height: 100vh;
                    margin: 0;
                }
+
                h2 {
             text-shadow: 2px 2px #757474;
                   }
+
+                  .btn{
+                     width: 100px;
+                     margin-top: 0px;
+                     padding:10px;
+                     padding-right: 2%;
+                     padding-bottom:0;
+
+                     border: 0;
+                     background: transparent;
+                 }
+
+
               .containers{
                   width: 95%;
                   overflow:hidden;
@@ -124,8 +137,8 @@ License: You must have a valid license purchased only from themeforest(the above
                   margin: 2px 20px 30px 50px ;
                   box-sizing:border-box;
                   /* border:2px solid white; */
-
                   }
+
                   h2{
                       text-align: center;
                   }
@@ -177,7 +190,9 @@ License: You must have a valid license purchased only from themeforest(the above
                       /* margin: 20px;  */
                   /* margin: 0px 20px 0px 20px ; */
                   margin: 2px 0px 30px 0px ;
-  }
+                  }
+
+
                     /* Scale up the box */
                     .box:hover {
                   transform: scale(1.03, 1.03);
