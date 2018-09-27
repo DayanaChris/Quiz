@@ -37,9 +37,9 @@
 
 
   <!-- START OF JS -->
-            <script>
+            <!-- <script>
                         CKEDITOR.replace( 'editor1' );
-                    </script>
+                    </script> -->
                     <script src="<?php echo base_url(); ?>assets/js/app.js"></script>
 
                     <script src="<?php echo base_url(); ?>assets/js/animate.js"></script>

@@ -15,8 +15,8 @@
                                     if($cat->num_rows() > 0){
                                       foreach ($cat->result() as $key => $value) {
                                     ?>
-                                    <li > <a href="<?php echo base_url(); ?><?php echo $value->id?>"><img class="card-img-top img-fluid box"   src="<?php echo site_url(); ?>assets/images/SPEDEMY/Menupage/<?php echo $value->category_image?>" alt="Category image"></a></li>
-                                    <?php
+                                        <li > <a href="<?php echo base_url(); ?>lessons/category/<?php echo $value->id?>"><img class="card-img-top img-fluid box"   src="<?php echo site_url(); ?>assets/uploads/<?php echo $value->category_image?>" alt="<?php echo $value->category_name?>" style="width: 100%"></a></li>
+                                      <?php
                                       }
                                     }
                                       ?>

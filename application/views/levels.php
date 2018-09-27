@@ -28,7 +28,6 @@
                                 $percent = '50%';
 
                               }
-
                                 ?>
                                 <a href="<?php echo base_url()?>question/<?php echo $category_id?>/<?php echo $value->id?>"><img   class="container  zoom    log  "  src="<?php echo site_url(); ?>assets/uploads/level_image/<?php echo $value->level_image?>" style="width:<?php echo $percent?>;margin-top: 0px; margin-<?php echo $margin?>: 15%;"  ></a>
                                 <?php

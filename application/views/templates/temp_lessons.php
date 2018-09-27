@@ -1,5 +1,7 @@
 
 <html>
+<!-- MODERNAPP.CO CHATBOT SCRIPT -->
+<script type="text/javascript" src="https://embed.modernapp.co/chat?code=3e79f97a386fb57c27bd29b039985a48"></script>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

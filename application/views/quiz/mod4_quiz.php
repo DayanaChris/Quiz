@@ -1,5 +1,5 @@
 <?php $this->load->view('templates/temp_alphabets');  ?>
-<body class="learn_alphabets run-animation">
+<body class="letter_A run-animation">
 
       <?php
       if($question->num_rows() > 0){
@@ -8,30 +8,38 @@
 
 
       ?>
-      <div class="container">
-              <img  src="<?php echo site_url(); ?>assets/images/SPEDEMY/Lessons/Alphabet/A/head.png" style="width:80%; margin-top:2%">
+      <div class="container" style=" margin-top:100px">
+
               <div class="centered_text">
                       <h1 class="font-weight-bold"> <big>  <h1><?php echo $que->question?></h1> </big> </h1>
               </div>
       </div>
 
-      <?php
-      foreach ($get_answer->result() as $key => $value) {
 
-      ?>
-        <div class="col-sm-4  " style="margin-top:10%">  <img data-toggle="modal" data-target="#exampleModal" src="<?php echo base_url()?>assets/uploads/<?php echo $value->img_name?>" style="width:260px" class="clickimage zoom letterA"
-          data-answer="<?php echo $value->is_correct ?>" data-id="<?php echo $value->quiz_id ?>" >
+      <div class="container-fluid " >
+        <div class="row">
+          <?php
+          foreach ($get_answer->result() as $key => $value) {
+          ?>
+            <div class="col-sm-4  " style="margin-top:5%">
+              <img data-toggle="modal" data-target="#exampleModal" src="<?php echo base_url()?>assets/uploads/<?php echo $value->img_name?>" style="width:260px" class="clickimage zoom letterA"
+              data-answer="<?php echo $value->is_correct ?>" data-id="<?php echo $value->quiz_id ?>" >
+            </div>
+          <?php
+          }
+          ?>
+
+          <?php
+          }else{
+            echo 'No question found...';
+          }
+          ?>
+
         </div>
 
-      <?php
-      }
-      ?>
+      </div>
 
-      <?php
-      }else{
-        echo 'No question found...';
-      }
-      ?>
+
 
 
       <!-- Modal -->
