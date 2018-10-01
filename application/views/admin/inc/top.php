@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--<![endif]-->
     <!-- BEGIN HEAD -->
     <!-- MODERNAPP.CO CHATBOT SCRIPT -->
-    <script type="text/javascript" src="https://embed.modernapp.co/chat?code=3e79f97a386fb57c27bd29b039985a48"></script>
+    <!-- <script type="text/javascript" src="https://embed.modernapp.co/chat?code=3e79f97a386fb57c27bd29b039985a48"></script> -->
     <head>
         <meta charset="utf-8" />
         <title>SPEDEMY.com</title>
@@ -221,7 +221,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </li>
                             <br><br>
                             <li class="nav-item start ">
-                                <a href="<?php echo base_url()?>add-lesson" class="nav-link nav-toggle">
+                                <a href="<?php echo base_url()?>lesson" class="nav-link nav-toggle">
                                     <i class="icon-user"></i>
                                     <span class="title">Lesson Manager</span>
                                 </a>

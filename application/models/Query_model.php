@@ -34,7 +34,7 @@ class Query_model extends CI_Model
 
 
 	public function questioner($id, $catId){
-		$qury = $this->db->select('*, quiz.id as quizID')
+		$qury = $this->db->select('*,template_num,background, quiz.id as quizID')
 										 ->from('level')
 										 ->join('quiz', 'level.id = quiz.level_id')
 										 ->where('level.id', $id)
@@ -42,7 +42,11 @@ class Query_model extends CI_Model
 										 ->order_by('rand()')
 										 ->limit(1)
 										 ->get();
+
 	return $qury;
+
+
+
 	}
 	public function get_answer($id){
 		$query = $this->db->select()
@@ -54,7 +58,15 @@ class Query_model extends CI_Model
 			return $query;
 	}
 
+	public function get_template(){
+		$query = $this->db->select('template_num')
+											 ->from('quiz')
+											 ->get();
+											 // $query = 0 + $query;
+											 // $query = (int)$query;
+			return $query;
+	}
 
 
- 
+
 }

@@ -10,10 +10,11 @@
     </div>
     <div class="portlet-body form">
 
+
             <div class="form-body">
             <div class="col-md-6">
                 <div class="form-group form-md-line-input">
-                    <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>">
+                    <input type="text" class="form-control" id="form_control_1" name="question" value="<?php //echo $value?>" required>
                     <label for="form_control_1">Question</label>
                     <span class="help-block">Some help goes here...</span>
                 </div>
@@ -40,16 +41,16 @@
 
 
 
-                 <!-- Text input-->
 
+            <!-- Question title input-->
             <div class="form-group">
              <div class="col-md-6">
                <label for="form_control_1">Question Title Image</label>
                <?php
                $count = 0;
                ?>
-                 <input type="text" class="form-control input-inline input-medium img<?php echo $count?> " name="question_image" />
-                 <input type="text" class="imgId<?php echo $count?>" name="question_image" />
+                 <input type="text" class="form-control input-inline input-medium img<?php echo $count?> " name="question_image" required/>
+                 <!-- <input type="text" class="imgId<?php echo $count?>" name="question_image" /> -->
 
                  <span class="help-inline">
                    <a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.
@@ -61,9 +62,8 @@
                ?>
              </div>
            </div>
-
-qa!W
              <!-- end category dropdown -->
+
              <!--LEVEL dropdown  -->
               <div class="col-md-4">
                  <div class="form-group form-md-line-input">
@@ -83,36 +83,88 @@ qa!W
                  </div>
               </div>
               <!--END LEVEL dropdown  -->
-             <div class="col-md-4">
-                 <div class="form-group form-md-line-input">
-                    <select name="timepic" class="form-control">
-                    	<?php
-						for ($i = 0; $i <= 59; $i+=5) {
-							if($i < 9){
-								$zero = 0;
-							}else{
-								$zero = '';
-							}
-						?>
-	                    	<option>00:<?php echo $zero.$i?>:00</option>
-                        <?php
-					 	}
-						?>
-                    </select>
-                    <label for="form_control_1">Time</label>
-                    <span class="help-block">Some help goes here...</span>
-                </div>
-            </div>
-            <div style="clear:both"></div>
-		</div>
+
+
+              <!-- START CHOOSE TIME -->
+               <div class="col-md-4">
+                   <div class="form-group form-md-line-input">
+                      <select name="timepic" class="form-control">
+                      	<?php
+            						for ($i = 0; $i <= 59; $i+=5) {
+            							if($i < 9){
+            								$zero = 0;
+            							}else{
+            								$zero = '';
+            							}
+            						?>
+            	                    	<option>00:<?php echo $zero.$i?>:00</option>
+                                    <?php
+            					 	}
+            						?>
+                      </select>
+                      <label for="form_control_1">Time</label>
+                      <span class="help-block">Some help goes here...</span>
+                  </div>
+              </div>
+              <!-- END TIME -->
+
+		        </div>
+            <!-- END BODY -->
        </div>
 </div>
+
+<!-- BACKGROUND COLOR AND TEMPLATE INPUT -->
+<div class="portlet light bordered">
+    <div class="portlet-title">
+
+
+    </div>
+    <div class="portlet-body form">
+        <div class="col-xs-12">
+            <div class="col-md-12" >
+
+              <div class="col-md-6">
+                  <div class="form-group form-md-line-input">
+                    Background Color:
+                     <!-- <input class="jscolor" value="ab2567"> -->
+
+                      <input type="text" class="form-control jscolor" id="form_control_1" name="background" value="ab2567" required>
+                      <span class="help-block">Some help goes here...</span>
+                  </div>
+               </div>
+
+               <div class="col-md-6">
+                   <div class="form-group form-md-line-input">
+                       <input type="text" class="form-control" id="form_control_1" name="template_num" value="<?php //echo $value?>" required>
+                       <label for="form_control_1">TEMPLATE #</label>
+                       <span class="help-block">Some help goes here...</span>
+                   </div>
+                </div>
+              <div style="clear:both"></div>
+
+
+            </div>
+        </div>
+          <div style="clear:both"></div>
+	</div>
+</div>
+
 
 <div class="portlet light bordered">
     <div class="portlet-title">
         <div class="caption font-red-sunglo">
             <i class="icon-settings font-red-sunglo"></i>
             <span class="caption-subject bold uppercase"> Answer</span>
+        </div>
+        <div class="actions">
+           <?php ?>
+        <!-- //remove sa kay makakutaw nga part :D -->
+        <div class="btn-group">
+               <a class="btn btn-sm green" href="javascript:;" id="add-more"> Add more example
+                   <i class="fa fa-plus"></i>
+               </a>
+           </div>
+        <?php ?>
         </div>
 
     </div>
@@ -137,10 +189,7 @@ qa!W
                                           </div>
                                           <div class="col-md-9">
                                               <input type="text" class="form-control input-inline input-medium img<?php echo $count?>" name="img[]">
-
                                               <input type="text" class="imgId<?php echo $count?>" name="imgid[]" />
-
-
                                               <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
                                           </div>
                                       </div>
@@ -159,7 +208,7 @@ qa!W
 	</div>
 </div>
 <div class="form-actions noborder">
-    <button type="submit" class="btn blue">Submit</button>
+    <button type="submit" class="success_quiz_add btn blue">Submit</button>
     <a href="<?php echo base_url()?>quiz" class="btn default">Cancel</a>
 </div>
 
@@ -182,5 +231,6 @@ qa!W
             </div>
         </div>
     </div>
+    <script src="<?php echo base_url(); ?>assets/jscolor.js"></script>
 
 <?php $this->load->view('admin/inc/footer');?>

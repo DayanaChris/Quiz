@@ -6,7 +6,6 @@
             <i class="icon-settings font-red-sunglo"></i>
             <span class="caption-subject bold uppercase"> Add Lessons</span>
         </div>
-
     </div>
     <div class="portlet-body form">
 
@@ -38,15 +37,13 @@
                 </div>
              </div>
              <!-- end category dropdown -->
-
              <div class="form-group">
-
                   <div class="col-md-9">
                     <label for="form_control_1">Category Title Image</label>
                     <?php
                     $count = 0;
                     ?>
-                      <input type="text" class="form-control input-inline input-medium img<?php echo $count?> " name="cat_title_image" />
+                      <input type="text" class="form-control input-inline input-medium img<?php echo $count?> " name="cat_title_image" required/>
                       <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
                       <!-- <span class="help-block">Some help goes here...</span> -->
                       <?php
@@ -78,7 +75,7 @@
               <?php
               $counts = 1;
               ?>
-                <input type="text" class="form-control input-inline input-medium img<?php echo $counts?>" name="img[]">
+                <input type="text" class="form-control input-inline input-medium img<?php echo $counts?>" name="img[]" required>
                 <input type="text" class="imgId<?php echo $counts?>" name="imgid[]" />
 
                 <span class="help-inline"><a class="select_img" id="<?php echo $count?>"  data-toggle="modal" href="#static">Upload or select image.</a></span>
@@ -90,7 +87,7 @@
         </div>
         <div class="col-md-4">
             <div class="form-group form-md-line-input">
-                <input type="text" class="form-control" id="form_control_1" name="lesson_name" value="<?php //echo $value?>">
+                <input type="text" class="form-control" id="form_control_1" name="lesson_name" value="<?php //echo $value?>" required>
 
                 <label for="form_control_1">Lesson  Name</label> <br>
                 <span class="help-block">Some help goes here...</span>
