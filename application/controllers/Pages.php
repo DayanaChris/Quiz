@@ -13,11 +13,10 @@
     }
 
 
-
-
     public function sing_vid_menu(){
       $this->load->view('sing_vid_menu');
     }
+
 
 
 

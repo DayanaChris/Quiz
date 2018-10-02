@@ -13,6 +13,8 @@ $route = array(
 	'sing-a-long'						=> 'pages/sing_vid_menu',
 
 
+
+
 	'add-category' 					=> 'category/create',
 	'add-level' 						=> 'level/create',
 
@@ -27,6 +29,10 @@ $route = array(
 
 	'edit-quiz/(:num)' 	 		=> 'quiz/edit/$1',
 	'category_menu' 				=>  'lessons/category_menu',
+
+	'lesson' 								=>  'lessons/lesson_menu',
+	'lesson/(:num)'					=> 'lessons/lesson/$1',
+
 	'videos_menu' 					=>  'lessons/videos_menu',
 	'videos/Lesson' 				=>  'lessons/lessons_video',
 	'videos/StorySeries' 		=>  'lessons/storyseries',
@@ -34,13 +40,24 @@ $route = array(
 
 
 
-	'question/(:num)/(:any)'				=> 'quiz/question/$1/$2',
+	'question/(:num)/(:any)'		=> 'quiz/question/$1/$2',
+	'temp1_quiz/(:num)/(:any)'				=> 'quiz/temp1_quiz/$1/$2',
+	'temp2_quiz/(:num)/(:any)'				=> 'quiz/temp2_quiz/$1/$2',
+
+	'mod1_quiz/(:num)/(:any)'		=> 'quiz/mod1_quiz/$1/$2',
+	'mod2_quiz/(:num)/(:any)'		=> 'quiz/mod2_quiz/$1/$2',
+	'temp7_quiz/(:num)/(:any)'		=> 'quiz/temp7_quiz/$1/$2',
+	'temp4_quiz/(:num)/(:any)'		=> 'quiz/temp4_quiz/$1/$2',
+
+	'dif1_quiz/(:num)/(:any)'		=> 'quiz/dif1_quiz/$1/$2',
+
+
 
 	'upload' 					=> 'upload/index',
 
 
 	//'add-user/(:num)'	=> 'auth/create_user/$1',
-	//'edit-user/(:num)' 	=> 'auth/edit_user/$1',
+	// 'edit-user/(:num)' 	=> 'auth/edit_user/$1',
 );
 
 
@@ -60,10 +77,10 @@ $route['lessons/lesson_alphabets'] = 'lessons/lesson_alphabets';
 
 
 $route['lessons/lesson_numbers'] = 'lessons/lesson_numbers';
-      $route['lessons/numbers'] = 'lessons/numbers';
+      // $route['lessons/numbers'] = 'lessons/numbers';
 
 
-      $route['lessons/lesson_colors'] = 'lessons/lesson_colors';
+      // $route['lessons/lesson_colors'] = 'lessons/lesson_colors';
 $route['lessons/lesson_colors'] = 'lessons/lesson_colors';
 $route['lessons/color_black'] = 'lessons/color_black';
 
@@ -72,18 +89,13 @@ $route['lessons/color_black'] = 'lessons/color_black';
 
 
 $route['lessons/lesson_actionwords'] = 'lessons/lesson_actionwords';
-      $route['lessons/action_words'] = 'lessons/action_words';
+      // $route['lessons/action_words'] = 'lessons/action_words';
 
 
 
 $route['lessons/lesson_shapes'] = 'lessons/lesson_shapes';
 $route['lessons/lesson_expressions'] = 'lessons/lesson_expressions';
-      $route['lessons/expression_happy'] = 'lessons/expression_happy';
-
-
-
-
-
+      // $route['lessons/expression_happy'] = 'lessons/expression_happy';
 
 
 $route['lessons/lesson_vowels'] = 'lessons/lesson_vowels';

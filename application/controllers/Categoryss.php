@@ -18,6 +18,7 @@ class Category extends CI_Controller {
 
 	public function index()
 	{
+
 		if (!$this->ion_auth->logged_in())
 		{
 			// redirect them to the login page
@@ -29,21 +30,36 @@ class Category extends CI_Controller {
 			return show_error('You must be an administrator to view this page.');
 		}
 		else{
+
 			// set the flash data error message if there is one
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+
+
+
 			$data = array(
 				'category' => $this->db->order_by('id', 'asc')->get_where('category')
 			);
 			$this->load->view('admin/category',$data);
+
+
 		}
+
+
+
+
 	}
+
+	// public function create()
+	// {
+	// 	$data = array(
+	// 		'is_edit' => false
+	// 	);
+	// 	$this->load->view('admin/category-create',$data);
+	// }
 
 	public function create()
 	{
-		$data = array(
-			'is_edit' => false
-		);
-		$this->load->view('admin/category-create',$data);
+		$this->load->view('admin/category-create');
 	}
 
 
@@ -63,28 +79,15 @@ class Category extends CI_Controller {
 		if(isset($_POST['categoryadd'])){
 			$attr = array(
 				'category_name' => $_POST['categoryadd'],
-				'category_image' => $_POST['category_image'],
-				'category_image_title' => $_POST['category_image_title'],
-				'template_num' => $_POST['template_num'],
-
-
 				'created_by' => $this->user_id
 			);
 			$this->db->insert('category',$attr);
 			redirect('category');
 		}
-
-		// EDIT A CATEGORY
 		if(isset($_POST['categoryedit'])){
 			//print_r($_POST);
 			$attr = array(
-				'category_name' => $_POST['categoryedit'],
-				'category_image' => $_POST['category_image_edit'],
-				// 'category_image_title' => $_POST['category_image_title_edit'],
-				// 'template_num' => $_POST['template_num_edit'],
-
-
-
+				'category_name' => $_POST['categoryedit']
 			);
 			$this->db->update('category', $attr, array('id' => $_POST['catid']));
 			redirect('category');
@@ -92,10 +95,8 @@ class Category extends CI_Controller {
 		if(isset($_POST['delete_category'])){
 			$this->db->delete('category', array('id' => $_POST['delete_category']));
 		}
+
 	}
-
-
-
 
 
 

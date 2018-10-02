@@ -20,7 +20,6 @@ class Quiz extends CI_Controller {
 
 	public function index()
 	{
-
 		if (!$this->ion_auth->logged_in())
 		{
 			// redirect them to the login page
@@ -46,38 +45,145 @@ class Quiz extends CI_Controller {
 		}
 	}
 
+	// // quiz templates
+	// public function mod1_quiz(){
+	// 	$this->load->view('quiz/mod1_quiz');
+	// }
+
+
+
+
 	public function question($category_id, $level_id)
+	{
+
+		$data = array(
+			'template_num' => $this->query->get_template(),
+			'question' => $this->query->questioner($level_id,$category_id),
+			// 'question_image' => $this->query->questioner($level_id,$category_id),
+
+		);
+
+		$this->load->view('templates/temp_lessons');
+		$this->load->view('question',$data);
+
+
+
+	}
+
+	public function mod1_quiz($category_id, $level_id)
 	{
 		$data = array(
 			'question' => $this->query->questioner($level_id,$category_id),
+			'img' => $this->query->questioner($level_id,$category_id),
+
 		);
 		$this->load->view('templates/temp_lessons');
-		$this->load->view('question',$data);
+		$this->load->view('quiz/mod1_quiz',$data);
 	}
+	public function mod2_quiz($category_id, $level_id)
+	{
+		$data = array(
+			'question' => $this->query->questioner($level_id,$category_id),
+			'question_image' => $this->query->questioner($level_id,$category_id),
+
+		);
+		$this->load->view('templates/temp_lessons');
+		$this->load->view('quiz/mod2_quiz',$data);
+	}
+	public function temp7_quiz($category_id, $level_id)
+	{
+		$data = array(
+			'question' => $this->query->questioner($level_id,$category_id),
+			'question_image' => $this->query->questioner($level_id,$category_id),
+
+		);
+		$this->load->view('templates/temp_lessons');
+		$this->load->view('quiz/temp7_quiz',$data);
+	}
+
+	public function temp4_quiz($category_id, $level_id)
+	{
+		$data = array(
+			'question' => $this->query->questioner($level_id,$category_id),
+			'question_image' => $this->query->questioner($level_id,$category_id),
+
+		);
+		$this->load->view('templates/temp_lessons');
+		$this->load->view('quiz/temp4_quiz',$data);
+	}
+	public function dif1_quiz($category_id, $level_id)
+	{
+		$data = array(
+			'question' => $this->query->questioner($level_id,$category_id),
+			'question_image' => $this->query->questioner($level_id,$category_id),
+
+		);
+		$this->load->view('templates/temp_lessons');
+		$this->load->view('quiz/dif1_quiz',$data);
+	}
+
+	public function temp2_quiz($category_id, $level_id)
+	{
+		$data = array(
+			'question' => $this->query->questioner($level_id,$category_id),
+			'question_image' => $this->query->questioner($level_id,$category_id),
+
+		);
+		$this->load->view('templates/temp_lessons');
+		$this->load->view('quiz/temp2_quiz',$data);
+	}
+
+	public function temp1_quiz($category_id, $level_id)
+	{
+		$data = array(
+			'question' => $this->query->questioner($level_id,$category_id),
+			'question_image' => $this->query->questioner($level_id,$category_id),
+
+		);
+		$this->load->view('templates/temp_lessons');
+		$this->load->view('quiz/temp1_quiz',$data);
+	}
+
+
+
+
+
 
 	public function create()
 	{
 		$data = array(
 			'category' => $this->db->order_by('id', 'asc')->get_where('category'),
 			'level' => $this->db->order_by('id', 'asc')->get_where('level')
-
-
 		);
 		$this->load->view('admin/quiz-create',$data);
 	}
+
+
 	public function post()
 	{
+
+		// IF THE ANSWER IS CORRECT IT WILL DISPLAY THE MODAL
 		if(isset($_POST['check_question'])){
 			if($_POST['check_question'] == 0){
 					echo 'error';
 			}else{
 					$this->load->view('answer');
+
 			}
 		}
+		// END check_question
+
+		if(isset($_POST['delete_question'])){
+			$this->query->delete_question($_POST['delete_question']);
+		}
+
 		if(isset($_POST['question'])){
 			$attr = array(
 				'question' => $_POST['question'],
 				'category_id' => $_POST['category_id'],
+				'question_image' => $_POST['question_image'],
+				'background' => $_POST['background'],
+				'template_num' => $_POST['template_num'],
 
 				'level_id' => $_POST['level_id'],
 
@@ -87,6 +193,8 @@ class Quiz extends CI_Controller {
 			$this->db->insert('quiz', $attr);
 			$lastid = $this->db->insert_id();
 
+
+			// default value, pag ang i click sa radio button mao to ang correct answer then ma change ang value to 1
 			$count = 0;
 			$answr = $_POST['answer'][0];
 			foreach($_POST['imgid'] as $img){
@@ -108,18 +216,35 @@ class Quiz extends CI_Controller {
 			$this->db->insert('quiz_image', $attr);
 			}
 
+			// // FOR QUIZ_ANSWER
 
-		 $attr = array(
-				'quiz_id' => $lastid,
-				'answer' => $_POST['answer'][0],
-			);
-			$this->db->insert('quiz_answer', $attr);
+		 // $attr = array(
+			// 	'quiz_id' => $lastid,
+			// 	'answer' => $_POST['answer'][0],
+			// );
+			// $this->db->insert('quiz_answer', $attr);
 			redirect(base_url().'quiz');
-		}
-		if(isset($_POST['delete_question'])){
-			$this->query->delete_question($_POST['delete_question']);
+
 		}
 	}
+
+// from post function,
+		public function c_answer()
+		{
+
+			// IF THE ANSWER IS CORRECT IT WILL DISPLAY THE MODAL
+			if(isset($_POST['check_question'])){
+				if($_POST['check_question'] == 0){
+						echo 'error';
+				}else{
+						$this->load->view('answer');
+
+				}
+			}
+	}
+
+
+
 
 	public function gallery($id){
 		$data = array(
@@ -152,9 +277,13 @@ class Quiz extends CI_Controller {
 		$location = 'files';
 		if($extension == 'jpeg' || $extension == 'jpg' || $extension == 'png' || $extension == 'gif'){
 			$location = 'images';
-		}else if($extension == 'mp4'){
+		}else if($extension == 'mp4' || $extension == 'mkv' || $extension == 'mov' || $extension == '3gp'|| $extension == 'flv' || $extension == 'm4v'){
 					$location = 'videos';
 				}
+				else if($extension == 'mp3' || $extension == 'wav' || $extension == 'wma' || $extension == 'vgm'|| $extension == 'pls' || $extension == 'm3u'){
+						$location = 'audio';
+
+						}
 
 
 		$targetDir = 'assets/uploads';
@@ -188,21 +317,35 @@ class Quiz extends CI_Controller {
 			$save = $fileName;
 			$origname = $original_filename;
 
-			$attribute = array(
-				'user_id' => $this->user_id,
-				'img_name' => $fileName,
-				'original_name' => $original_filename,
-			);
-			$this->db->insert('images',$attribute);
+			if($extension == 'jpeg' || $extension == 'jpg' || $extension == 'png' || $extension == 'gif'){
+				$attribute = array(
+					'user_id' => $this->user_id,
+					'img_name' => $fileName,
+					'original_name' => $original_filename,
+				);
+				$this->db->insert('images',$attribute);
+
+			}else if($extension == 'mp4' || $extension == 'mkv' || $extension == 'mov' || $extension == '3gp'|| $extension == 'flv' || $extension == 'm4v'){
+				// video attributes
+							$attributes = array(
+								'user_id' => $this->user_id,
+								'vid_name' => $fileName,
+								'original_name' => $original_filename,
+							);
+							$this->db->insert('videos',$attributes);
+					}else if($extension == 'mp3' || $extension == 'wav' || $extension == 'wma' || $extension == 'vgm'|| $extension == 'pls' || $extension == 'm3u'){
+						// video attributes
+
+									$attributes = array(
+										'user_id' => $this->user_id,
+										'audio_name' => $fileName,
+										'original_name' => $original_filename,
+									);
+									$this->db->insert('audio',$attributes);
+							}
 
 
-// video attributes
-			$attributes = array(
-				'user_id' => $this->user_id,
-				'vid_name' => $fileName,
-				'original_name' => $original_filename,
-			);
-			$this->db->insert('videos',$attributes);
+
 			sleep(1);
 
 			closedir($dir);
@@ -246,33 +389,33 @@ class Quiz extends CI_Controller {
 	}
 
 
-	public function videoupld()
-    {
-       $this->load->helper('string');
-       $config['upload_path'] = 'assets/uploads_videos'; # check path is correct
-       $config['max_size'] = '1000000000000000';  #102400000
-       $config['allowed_types'] = 'mp4'; # add video extenstion on here
-       $config['overwrite'] = FALSE;
-       $config['remove_spaces'] = TRUE;
-       $video_name =$_FILES['video_image']['name'];
-       $config['file_name'] = $video_name;
-       $this->load->library('upload', $config);
-       $this->upload->initialize($config);
-       if ( ! $this->upload->do_upload('video_image'))
-       {
-            echo 'fail';
-            return;
-            //redirect('Admin/video_upload');
-        }
-        else
-        {
-            $data = array('upload_data' => $this->upload->data());
-            $this->load->view('upload_success', $data);
-            $url = 'assets/uploads_videos'.$video_name;
-            $this->Admin_model->videoupld($url);
-            redirect('admin/upload');
-        }
-    }
+	// public function videoupld()
+  //   {
+  //      $this->load->helper('string');
+  //      $config['upload_path'] = 'assets/uploads_videos'; # check path is correct
+  //      $config['max_size'] = '1000000000000000';  #102400000
+  //      $config['allowed_types'] = 'mp4'; # add video extenstion on here
+  //      $config['overwrite'] = FALSE;
+  //      $config['remove_spaces'] = TRUE;
+  //      $video_name =$_FILES['video_image']['name'];
+  //      $config['file_name'] = $video_name;
+  //      $this->load->library('upload', $config);
+  //      $this->upload->initialize($config);
+  //      if ( ! $this->upload->do_upload('video_image'))
+  //      {
+  //           echo 'fail';
+  //           return;
+  //           //redirect('Admin/video_upload');
+  //       }
+  //       else
+  //       {
+  //           $data = array('upload_data' => $this->upload->data());
+  //           $this->load->view('upload_success', $data);
+  //           $url = 'assets/uploads_videos'.$video_name;
+  //           $this->Admin_model->videoupld($url);
+  //           redirect('admin/upload');
+  //       }
+  //   }
 
 
 }
